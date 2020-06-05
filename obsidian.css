@@ -358,74 +358,62 @@ side-dock-ribbon-tab-inner is-after-active {
 /*************/
 
 .nav-folder-title {  
-  color: #cccccc !important;
+  color: #cccccc;
   background-color: #0d0d0d;
   }
-
 
 .nav-file-title {  
-  color: #999999 !important;
+  color: #999999;
   background-color: #0d0d0d;
   }
   
-.nav-file.is-active {
-  color: #fcf601 !important; /* does not seem to work*/
-  background-color: rgba(252, 246, 1, 1);
-  }
-
-
-  
-.nav-file-title:hover {
-  color: #59a2c5 !important;
-}
-
-.nav-folder-title:hover {
-    background-color: #999999;
-}
-
 .nav-folder-children {
     background-color: #0d0d0d;
 }
-
 
 
 /*************/
 /* RIGHT side dock SPECIAL STUFF*/
 /*************/
 
+/*Search result TEXT*/
 .search-result-file-matches{  
-  color: #999999 !important;
-  background-color: #1a1a1a;
-  }
-
-search-result-file-match
-  color: #b3a14b !important;
-  background-color: #b3a14b;
-  }
+  color: #999999;
+  background-color: #0d0d0d;}
   
+.search-result-file-match:hover {
+    color: #d669bc;
+    background-color: #0d0d0d;}
+
+/*Search result TITLE*/
 .search-result-file-title {  
-  color: #5dbcd2 !important;
-  background-color: #1a1a1a;
-  }
+  color: #5dbcd2;
+  background-color: #0d0d0d;}
   
-  .search-result-file-title:hover {
-	color: #5dbcd2; /* not working*/
-    background-color: #333333;
-}
-
+.search-result-file-title:hover {
+	color: #d669bc;
+    background-color: #333333; /* filename hover*/}
+    
+/*Search result MATCHED TEXT*/
 .search-result-file-matched-text {  
-  color: #cccccc !important;
-  background-color: #1a1a1a;
-  } /* backup color purple rgba(173, 157, 249, 0.75) */
+  color: #cccccc;
+  background-color: #0d0d0d;}
 
+/*Search result BACKGROUND*/
+.search-result-container {  
+  color: #999999;
+  background-color: #0d0d0d;}
+
+
+/*************/
+/* RIGHT side dock ******* RIBBON*/
+/*************/
 
 
 .side-dock-ribbon-tab.is-active .side-dock-ribbon-tab-inner:hover {
     color: #5dbcd2 !important;
     background-color: #1a1a1a;
 }
-
-
 
 
 .side-dock-ribbon-tab.is-active .side-dock-ribbon-tab-inner:hover {
