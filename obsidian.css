@@ -1,0 +1,1034 @@
+
+.theme-dark
+{
+  --background-primary: #2f3136;
+  --background-primary-alt: #36393f;
+  --background-secondary: #202225;
+  --background-secondary-alt: #000000;
+  --text-normal: #5dbcd2;
+  --text-faint: #999999;
+  --text-title-h1: #5dbcd2;
+  --text-title-h2: #5dbcd2;
+  --text-title-h3: #5dbcd2;
+  --text-title-h4: #5dbcd2;
+  --text-title-h5: #5dbcd2;
+  --text-title-h6: #5dbcd2;
+  --text-link: #99ff99;
+  --text-a: #d669bc;
+  --text-a-hover: #b3a14b;
+  --text-mark: rgb(252, 246, 1, 0.75); /* SEE HIGHLIGHTER */
+  --pre-code: #272524d9;
+  --text-highlight-bg: rgba(252, 246, 1, 0.4); /* SEE HIGHLIGHTER */
+  --interactive-accent: rgb(252, 246, 1, 0.95);
+  --interactive-before: #5e6565;
+  --background-modifier-border: #595959;
+  --blockquote-border: #9e8aff;
+  --text-accent: #ff9640ba;
+  --interactive-accent-rgb: #fe8019;
+  --font-family-editor: Avenir, Avenir Next, sans-serif;
+  --font-family-preview: Avenir, Avenir Next, sans-serif;
+}
+
+#graph-view-canvas .links
+{
+  stroke: var(--interactive-accent-rgb) !important;
+}
+
+strong {
+  color: rgb(252, 246, 1, 0.74);
+  font-weight: 700;
+}
+
+em {
+  color: #ad9df9;
+}
+
+
+/**********************/
+/* HIGHLIGHTER */
+/**********************/
+
+
+mark
+{
+  background-color: var(--text-mark) !important;
+  padding-top: 4px;
+  padding-bottom: 1px;
+}
+
+
+.cm-s-obsidian span.cm-highlight {
+    color: #2f3136;
+    background-color: rgb(252, 246, 1, 0.8);
+}
+
+.markdown-preview-view mark {
+    color: #2f3136;
+    }
+
+
+
+
+.modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(252, 246, 1, 0.1);
+}
+
+/**********************/
+/* links and brackets */
+/**********************/
+
+
+
+
+
+
+
+/* link */
+a,
+.internal-link,
+.cm-hmd-internal-link,
+.cm-link,
+.cm-formatting-link
+{
+  color: var(--text-a) !important;
+  text-decoration: none !important;
+  font-family: Avenir !important;
+}
+
+/* link hover color */
+a:hover,
+.internal-link:hover
+{
+  color: var(--text-a-hover) !important;
+  text-decoration: none !important;
+}
+
+/* make external links italics to differentiate */
+a:not(.internal-link) {
+  font-style: italic;
+}
+
+/* blockquote */
+.cm-quote /* for editor */
+{
+  color: var(--text-normal) !important;
+}
+
+blockquote /* for preview */
+{
+  border-color: var(--blockquote-border) !important;
+}
+
+/* icons at top of panes*/
+.file-view-actions a
+{
+  color: var(--text-muted) !important;
+}
+
+.file-view-actions a:hover
+{
+  color: var(--text-a) !important;
+}
+
+/* html tags in editor */
+.cm-tag
+{
+  color: var(--text-accent) !important;
+}
+
+/* code blocks in preview */
+pre code
+{
+  padding: 6px !important;
+  line-height: normal;
+  display: block;
+  background-color: var(--pre-code) !important;
+}
+
+.markdown-preview-view pre
+{
+  padding: 0px !important;
+}
+
+/* in-line code for editor and preview and code block for editor*/
+code,
+.cm-inline-code
+{
+  background-color: var(--pre-code) !important;
+  color: var(--text-muted) !important;
+  bottom: 0px !important;
+}
+
+/* code and code blocks for preview */
+.markdown-preview-view code
+{
+  font-size: 13.5px;
+}
+
+
+/**********/
+/* tables */
+/**********/
+
+
+th
+{
+  font-weight: 800 !important;
+}
+
+thead
+{
+  border-bottom: 4px solid var(--background-modifier-border);
+}
+
+.table
+{
+  background-color: var(--background-secondary-alt);
+  border: 1px solid var(--background-modifier-border);
+  padding: 4px;
+  line-height: normal;
+  display: block;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* embedded images */
+img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* horizontal line in preview */
+.markdown-preview-view hr
+{
+  background-color: var(--text-normal);
+}
+
+
+
+
+
+
+
+/*************/
+/* checkboxes */
+/*************/
+
+
+
+
+/* task lists! (DEATH AU - I'm proud of this, but could use improvement) */
+.markdown-preview-view .task-list-item-checkbox {
+    -webkit-appearance: none;
+    top: 1.3px !important;
+    box-sizing: border-box;
+    border: 1px solid  var(--accent-2);
+    position: relative;
+    width: 1.25em;
+    height: 1.25em;
+    margin: 0;
+    box-shadow: 0 0 0.2em #fcf601;
+}
+.markdown-preview-view .task-list-item-checkbox:checked::before {
+    content: '✓';
+    position: absolute;
+    color: #cbc801;
+    font-size:1em;
+    line-height: 1.25em;
+    width:1.2em;
+    text-align:center;
+    text-shadow: 0 0 0.5em var(--accent-2);
+}
+
+
+
+.markdown-preview-view .task-list-item-checkbox
+{
+  top: 0px;
+}
+
+
+.checkbox-container {
+    background-color: #5dbcd2;
+    border-radius: 14px;
+    display: inline-block;
+    height: 22px;
+    position: relative;
+    top: 4px;
+    user-select: none;
+    width: 42px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
+    transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border 0.15s ease-in-out, opacity 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.checkbox-container.is-enabled {
+    background-color: #5dbcd2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*************/
+/* LEFT side dock --------- RIBBON*/
+/*************/
+
+
+.side-dock-ribbon {
+  background-color: #000000;
+}
+
+.side-dock-ribbon-tab-inner {
+  background-color: #000000;
+}
+
+.side-dock-ribbon-action {
+  background-color: #000000;
+}
+
+
+/* LEFT side dock ----- RIBBON FAILED ATTEMPTS*/
+side-dock-ribbon-tab is-before-active {
+  color: #000000;
+  background-color: #000000;
+}
+side-dock-ribbon-before is-before-active {
+  color: #000000;
+  background-color: #000000;
+}
+side-dock-ribbon-tab-inner is-before-active {
+  color: #000000;
+  background-color: #000000;
+}
+side-dock-ribbon-tab-inner {
+  color: #000000;
+  background-color: #000000;
+}
+
+.side-dock-plugin-panel.mod-file-explorer,
+.side-dock-plugin-panel.mod-starred,
+.side-dock-ribbon-tab.is-after-active,
+.side-dock-ribbon-before.is-before-active,
+.side-dock-ribbon-after.is-before-active {
+   background-color: #000000;
+}
+
+
+
+
+side-dock-ribbon-tab-inner is-after-active {
+  background-color: #000000;
+}
+
+.side-dock-ribbon-tab.is-active {
+  color: #cccccc !important;
+}
+
+
+.side-dock-title {
+  background-color: #0d0d0d;
+  }
+
+.nav-buttons-container {
+  background-color: #0d0d0d;
+  }
+  
+.nav-header {
+  background-color: #0d0d0d;
+  }
+
+/*************/
+/* LEFT side dock --------- FILE EXPLORER*/
+/*************/
+
+.nav-folder-title {  
+  color: #cccccc !important;
+  background-color: #0d0d0d;
+  }
+
+
+.nav-file-title {  
+  color: #999999 !important;
+  background-color: #0d0d0d;
+  }
+  
+.nav-file.is-active {
+  color: #fcf601 !important; /* does not seem to work*/
+  background-color: rgba(252, 246, 1, 1);
+  }
+
+
+  
+.nav-file-title:hover {
+  color: #59a2c5 !important;
+}
+
+.nav-folder-title:hover {
+    background-color: #999999;
+}
+
+.nav-folder-children {
+    background-color: #0d0d0d;
+}
+
+
+
+/*************/
+/* RIGHT side dock SPECIAL STUFF*/
+/*************/
+
+.search-result-file-matches{  
+  color: #999999 !important;
+  background-color: #1a1a1a;
+  }
+
+search-result-file-match
+  color: #b3a14b !important;
+  background-color: #b3a14b;
+  }
+  
+.search-result-file-title {  
+  color: #5dbcd2 !important;
+  background-color: #1a1a1a;
+  }
+  
+  .search-result-file-title:hover {
+	color: #5dbcd2; /* not working*/
+    background-color: #333333;
+}
+
+.search-result-file-matched-text {  
+  color: #cccccc !important;
+  background-color: #1a1a1a;
+  } /* backup color purple rgba(173, 157, 249, 0.75) */
+
+
+
+.side-dock-ribbon-tab.is-active .side-dock-ribbon-tab-inner:hover {
+    color: #5dbcd2 !important;
+    background-color: #1a1a1a;
+}
+
+
+
+
+.side-dock-ribbon-tab.is-active .side-dock-ribbon-tab-inner:hover {
+    color: #d669bc !important;
+    background-color: #1a1a1a;
+}
+
+.nav-file-tag{ color: #5dbcd2; } for the PNG text, but can't specifically target "PNG", just all of those filetype tags.
+.nav-file.is-active .nav-file-tag { color: #5dbcd2; }
+
+
+
+
+
+/* side dock text, like file names and backlink context */
+.side-dock-panels-container *
+{
+  font-size: 13px !important;
+}
+
+.side-dock-plugin-panel-inner  {
+    
+    background-color: #1a1a1a;
+}
+
+/* side dock titles at top */
+.side-dock-title
+{
+  font-size: 20px !important;
+  font-weight: 800 !important;
+}
+
+
+
+/* hover actions on side dock navigation */
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-tab-inner:hover,
+.side-dock-ribbon-action:hover,
+.side-dock-ribbon-action.is-active:hover,
+.nav-action-button:hover,
+.side-dock-collapse-btn:hover
+{
+  color: var(--text-a);
+}
+
+/* condense line spacing on file explorer title list. also avoids character-level word breaks */
+.nav-file-title-content,
+.search-result-file-title,
+.search-result-file-match
+{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: normal !important;
+  word-break: keep-all;
+}
+
+/* clean up side bar empty state (e.g. unlinked mentions) */
+.search-empty-state
+{
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: normal;
+}
+
+
+
+
+
+
+/* font for everything outside of editor/preview panes */
+.app-container
+{
+  font-family: var(--font-family-preview);
+}
+
+.status-bar-item
+{
+  font-family: var(--font-family-preview);
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+/******************/
+/* editor section */
+/******************/
+
+
+
+
+
+
+
+
+
+
+/* EDITOR Text (outside of headings and code) */
+
+.cm-s-obsidian
+{
+  font-family: var(--font-family-editor);
+  font-size: 15px;
+  color: var(--text-normal);
+  padding-left: 8% !important;
+  padding-right: 4% !important;
+}
+
+.mod-single-child .cm-s-obsidian
+{
+  font-family: var(--font-family-editor);
+  font-size: 15px;
+  color: var(--text-normal);
+  padding-left: 8% !important;
+  padding-right: 4% !important;
+}
+
+
+
+/* EDITOR headings */
+
+
+.cm-header-1
+{
+  font-family: var(--font-family-editor);
+  font-weight: 500;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--text-title-h1);
+}
+
+.cm-header-2
+{
+  font-family: var(--font-family-editor);
+  font-weight: 500;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--text-title-h2);
+}
+
+.cm-header-3
+{
+  font-family: var(--font-family-editor);
+  font-weight: 500;
+  font-size: 23px;
+  font-weight: bold;
+  color: var(--text-title-h3);
+}
+
+.cm-header-4
+{
+  font-family: var(--font-family-editor);
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-title-h4);
+}
+
+.cm-header-5
+{
+  font-family: var(--font-family-editor);
+  font-weight: 500;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-title-h5);
+}
+
+.cm-header-6
+{
+  font-family: var(--font-family-editor);
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-title-h6);
+}
+
+.cm-strong {
+  color: rgb(252, 246, 1, 0.8);
+  font-weight: 700;
+}
+
+.cm-em {
+  color: #ad9df9;
+}
+
+.cm-s-obsidian span.cm-hashtag {
+    color: #d669bc;
+    text-decoration: underline;
+}
+
+
+
+/* This is the dashes in bullets. Color does not work, 
+but font weight does. */
+.cm-formatting-list {
+  color: #fcf601;
+  font-weight: 700;
+} 
+
+.cm-formatting  /* This is the color of header hashtags. Don't change. */
+.cm-formatting-list-ul
+.cm-list-1 /* This is the color of text in lists. Don't change. */
+
+/* This does not work */
+.cm-hashtag {
+  color: #fcf601;
+}
+.cm-meta cm-hashtag-end {
+  color: #fcf601;
+}
+
+.cm-meta cm-hashtag-end {
+  color: #fcf601;
+}
+
+
+
+
+/******************/
+/* PREVIEW section */
+/******************/
+
+
+
+
+/* PREVIEW - normal text (outside of headings and code) */
+
+
+.markdown-preview-view
+{
+  font-family: var(--font-family-preview);
+  font-size: 15px;
+  color: var(--text-normal);
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+}
+
+.mod-single-child .markdown-preview-view
+{
+  font-family: var(--font-family-preview);
+  font-size: 15px;
+  color: var(--text-normal);
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+}
+
+
+/* PREVIEW headings */
+
+
+.markdown-preview-view h1
+{
+  font-family: var(--font-family-preview);
+  font-weight: 500;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--text-title-h1);
+}
+
+.markdown-preview-view h2
+{
+  font-family: var(--font-family-preview);
+  font-weight: 500;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--text-title-h2);
+}
+
+.markdown-preview-view h3
+{
+  font-family: var(--font-family-preview);
+  font-weight: 500;
+  font-size: 23px;
+  font-weight: bold;
+  color: var(--text-title-h3);
+}
+
+.markdown-preview-view h4
+{
+  font-family: var(--font-family-preview);
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-title-h4);
+}
+
+.markdown-preview-view h5
+{
+  font-family: var(--font-family-preview);
+  font-weight: 500;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-title-h5);
+}
+
+.markdown-preview-view h6
+{
+  font-family: var(--font-family-preview);
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-title-h6);
+}
+
+
+
+
+
+
+/* this code stuff isn't working for me */
+
+code
+{
+  font-family: var(--font-family-preview);
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: none;
+  color: var(--text-title-h3);
+}
+
+.code {
+    background-color: var(--grey) !important;
+    border: 1px solid var(--background-modifier-border) !important;
+    border-color: #ba6ea0; !important;
+}
+
+
+
+
+
+
+
+
+/* internal embedded link rendering in preview */
+.markdown-embed-title
+{
+  font-weight: 600;
+}
+
+.markdown-embed
+{
+  padding-left: 8px !important;
+  padding-right: 4px !important;
+  margin-left: 8px !important;
+  margin-right: 4px !important;
+}
+
+
+/* normal text outside of headings and code */
+.markdown-preview-view
+{
+  font-family: var(--font-family-preview);
+  font-size: 15px;
+  color: var(--text-normal);
+  padding-left: 8% !important;
+  padding-right: 4% !important;
+}
+
+
+
+/* remove secondary scroll bar in editor that comes from adding variable padding */
+.CodeMirror-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* to have sidebar hide and then reveal on hover
+.app-container.is-left-sidedock-collapsed .side-dock.mod-left:not(:hover), .app-container.is-right-sidedock-collapsed .side-dock.mod-right:not(:hover) {
+  width: 0px !important;
+}
+*/
+
+
+/* internal embedded link rendering in preview */
+.markdown-embed-title
+{
+  font-weight: 600;
+}
+
+.markdown-embed
+{
+  padding-left: 8px !important;
+  padding-right: 4px !important;
+  margin-left: 8px !important;
+  margin-right: 4px !important;
+}
+
+/* clean up side bar empty state (e.g. unlinked mentions) */
+.search-empty-state
+{
+  width: auto;
+  padding-left: 10px;
+  padding-right: 5px;
+  line-height: normal;
+}
+
+/* remote secondary scroll bar in editor that comes from adding variable padding */
+.CodeMirror-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* to have sidebar hide and then reveal on hover
+.app-container.is-left-sidedock-collapsed .side-dock.mod-left:not(:hover), .app-container.is-right-sidedock-collapsed .side-dock.mod-right:not(:hover) {
+  width: 0px !important;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/******************/
+/* Editor Code Appearance - */
+/******************/
+
+.CodeMirror-code span.cm-inline-code {     
+	color: #f1f2f3 !important;
+}
+
+
+
+    /******************/
+    /* Editor Code - from death-au */
+    /* i think this just adds a border to inline code in editor mode */
+    /******************/
+
+
+.cm-s-obsidian span.cm-inline-code {
+  border: 1px solid #757b8a;
+  border-radius: 4px;
+}
+.cm-s-obsidian span.cm-formatting-code.cm-inline-code {
+  border-right-width: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.cm-s-obsidian span.cm-formatting-code.cm-inline-code + span.cm-inline-code {
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+}
+
+.cm-s-obsidian span.cm-formatting-code.cm-inline-code + span.cm-inline-code + span.cm-formatting-code.cm-inline-code {
+  border-left-width: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-right-width: 1px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+
+/* Editor CodeBlock TEXT Appearance - */
+.cm-s-obsidian pre.HyperMD-codeblock {     
+	color: #f1f2f3 !important;
+}
+
+
+
+
+
+/******************/
+/* Preview Code Appearance */
+/******************/
+
+
+
+.markdown-preview-view code {
+color: #d5dadd !important;
+background-color: #525660 !important;
+bottom: -0.1px !important;
+}
+
+
+
+
+
+
+
+/******************/
+/* Naked Embeds - But I'm keeping Border and Scroll! */
+/******************/
+.markdown-embed-title { display:none; }
+.markdown-preview-view .markdown-embed-content>:first-child { margin-top: 0; }
+.markdown-preview-view .markdown-embed-content>:last-child { margin-bottom: 0; }
+
+
+.markdown-embed-link {
+color: #59a2c5 !important;
+right: 2px !important;
+}
+
+.markdown-embed-link:hover {
+color: #b3a14b !important;
+}
+
+
+
+
+
+
+/******************/
+/* Andy Matuschak mode! V2! */
+/******************/
+
+
+
+
+
+
+
+.workspace-split.mod-vertical { overflow-x:auto; }
+.workspace-leaf, .workspace-split > .workspace-split { min-width: 650px; min-height: 500px; }
+.workspace-split.mod-horizontal { overflow-y: auto; }
+
+.workspace-split.mod-vertical > * {
+    flex-direction: row;
+    display: flex;
+    box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.25);
+}
+
+.workspace-leaf {
+    position: sticky;
+    --stick-left: 40px;
+    left:0;
+}
+
+.workspace-leaf:nth-child(10n-8) { left: calc(var(--stick-left) * 0); }
+.workspace-leaf:nth-child(10n-7) { left: calc(var(--stick-left) * 1); }
+.workspace-leaf:nth-child(10n-6) { left: calc(var(--stick-left) * 2); }
+.workspace-leaf:nth-child(10n-5) { left: calc(var(--stick-left) * 3); }
+.workspace-leaf:nth-child(10n-4) { left: calc(var(--stick-left) * 4); }
+.workspace-leaf:nth-child(10n-3) { left: calc(var(--stick-left) * 5); }
+.workspace-leaf:nth-child(10n-2) { left: calc(var(--stick-left) * 6); }
+.workspace-leaf:nth-child(10n-1) { left: calc(var(--stick-left) * 7); }
+.workspace-leaf:nth-child(10n+0) { left: calc(var(--stick-left) * 8); }
+.workspace-leaf:nth-child(10n+1) { left: calc(var(--stick-left) * 9); }
+
+.workspace-leaf-content {
+    display: flex;
+    padding-right: 0;
+}
+
+.view-header {
+    writing-mode: vertical-lr;
+    border-right: 1px solid var(--background-secondary-alt);
+    border-left: 2px solid var(--background-secondary-alt);
+    border-top: none;
+    border-bottom: none;
+    height: auto;
+}
+
+.view-header-title-container {
+    width: 40px;
+    height: unset;
+    padding-left: unset;
+    padding-top: 20px;
+}
+
+.workspace-leaf.mod-active .view-header {
+    border-right: 2px solid var(--interactive-accent);
+    border-bottom: none;
+}
+
+.view-actions {
+    padding: 10px 5px;
+}
+
+.view-header-title-container:after {
+    width: 100%;
+    height: 30px;
+    top:unset;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, var(--background-secondary));
+}
+
+.workspace-leaf.mod-active .view-header-title-container:after {
+    background: linear-gradient(to bottom, transparent, var(--background-primary-alt));
+}
+
+.view-action {
+    margin: 8px 0;
+    top: 0;
+}
+
+.view-content {
+    height: 100%;
+}
+
+.workspace-leaf.mod-active .view-header {
+    clip-path: polygon(0 20px, 20px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
