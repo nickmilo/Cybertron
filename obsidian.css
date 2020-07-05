@@ -27,6 +27,7 @@
   --interactive-accent-rgb: #fe8019;
   --font-family-editor: Avenir, Avenir Next, sans-serif;
   --font-family-preview: Avenir, Avenir Next, sans-serif;
+  --text-selection: #164f92;
 }
 
 #graph-view-canvas .links
@@ -924,7 +925,14 @@ color: #b3a14b !important;
 }
 
 
+/******************/
+/* Custom addition by randulfr */
+/******************/
 
+.theme-dark .notice {
+    background-color: #2f3136;
+    color: rgba(252, 246, 1);
+}
 
 
 
