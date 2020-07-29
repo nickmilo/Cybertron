@@ -23,7 +23,7 @@
   --interactive-before: #5e6565;
   --background-modifier-border: #595959;
   --blockquote-border: #9e8aff;
-  --text-accent: #ff9640ba;
+  --text-accent: #319cb4;
   --interactive-accent-rgb: #fe8019;
   --font-family-editor: Avenir, Avenir Next, sans-serif;
   --font-family-preview: Avenir, Avenir Next, sans-serif;
@@ -259,7 +259,7 @@ img
 
 
 .checkbox-container {
-    background-color: #5dbcd2;
+    background-color: #9196a1;
     border-radius: 14px;
     display: inline-block;
     height: 22px;
@@ -276,6 +276,12 @@ img
 }
 
 
+element.style {
+}
+.workspace-leaf-content[data-type='search'] .nav-action-button.is-active {
+    background-color: rgb(252, 246, 1, 0.25);
+    color: var(--text--accent);
+}
 
 
 
