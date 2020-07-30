@@ -284,7 +284,10 @@ element.style {
 }
 
 
-
+button.mod-cta {
+    background-color: #5dbcd2;
+    color: #36393f;
+}
 
 
 
