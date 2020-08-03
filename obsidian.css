@@ -16,7 +16,7 @@
   --text-link: #99ff99;
   --text-a: #d669bc;
   --text-a-hover: #b3a14b;
-  --text-mark: rgb(252, 246, 1, 0.75); /* SEE HIGHLIGHTER */
+  --text-mark: rgb(252, 246, 1, 0.60); /* SEE HIGHLIGHTER */
   --pre-code: #272524d9;
   --text-highlight-bg: rgba(252, 246, 1, 0.4); /* SEE HIGHLIGHTER */
   --interactive-accent: rgb(252, 246, 1, 0.95);
@@ -60,12 +60,12 @@ mark
 
 
 .cm-s-obsidian span.cm-highlight {
-    color: #2f3136;
-    background-color: rgb(252, 246, 1, 0.8);
+    color: #0c0c0e;
+    background-color: rgb(252, 246, 1, 0.6);
 }
 
 .markdown-preview-view mark {
-    color: #2f3136;
+    color: #0c0c0e;
     }
 
 
