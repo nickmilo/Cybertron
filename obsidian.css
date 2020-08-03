@@ -36,9 +36,10 @@
 }
 
 strong {
-  color: rgb(252, 246, 1, 0.68);
+  color: #b2af01;
   font-weight: 700;
 }
+
 
 em {
   color: #ad9df9;
@@ -609,7 +610,7 @@ side-dock-ribbon-tab-inner is-after-active {
 }
 
 .cm-strong {
-  color: rgb(252, 246, 1, 0.8);
+  color: #b2af01;
   font-weight: 700;
 }
 
