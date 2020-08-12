@@ -284,6 +284,11 @@ element.style {
     color: var(--text--accent);
 }
 
+.workspace-leaf-content[data-type='search'] .nav-action-button.is-active, .workspace-leaf-content[data-type='backlink'] .nav-action-button.is-active {
+    background-color: rgb(252, 246, 1, 0.25);
+    color: var(--text--accent);
+}
+
 
 button.mod-cta {
     background-color: #5dbcd2;
@@ -1041,3 +1046,19 @@ color: #b3a14b !important;
   background-color: var(--background-primary);
 }
 
+
+
+/***************************************/
+/*    at a rule line before ul list    */
+/***************************************/
+
+ul ul { position: relative; }
+ul ul::before {
+  content:'';
+  border-left: 1px solid #2c8ba0;
+  position: absolute;
+}
+ul ul::before { left: -1em; top: 0; bottom: 0; }
+
+/* rule line when there are checkboxes*/
+ul .task-list-item ul::before {left: 0.15em !important}
