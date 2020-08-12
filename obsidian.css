@@ -289,6 +289,23 @@ element.style {
     color: var(--text--accent);
 }
 
+.list-item-ending-flair {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    font-size: 12px;
+    color: var(--text--accent);
+    background-color: #000000;
+    line-height: 12px;
+    border-radius: 3px;
+    padding: 2px 4px;
+}
+
+.list-item:hover .list-item-ending-flair {
+    color: var(--text--accent);
+    background-color: #000000;
+}
+
 
 button.mod-cta {
     background-color: #5dbcd2;
