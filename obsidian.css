@@ -85,7 +85,34 @@ mark
 /**********************/
 
 
+/**********************/
+/* Graph View */
+/**********************/
 
+.graph-view.color-fill {
+    color: #5dbcd2;
+}
+.graph-view.color-circle {
+    color: #26798c;
+}
+.graph-view.color-line {
+    color:  #26798c;
+}
+
+
+
+.graph-view.color-text {
+    color: #cccccc;
+}
+
+
+
+.graph-view.color-fill-highlight {
+    color: #26798c;
+}
+.graph-view.color-line-highlight {
+    color: #5dbcd2;
+}
 
 
 
