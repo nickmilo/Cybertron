@@ -117,7 +117,27 @@ mark
 
 
 
+/***************************************/
+/*             Blockquote              */
+/***************************************/
+
+/* for preview */
+.markdown-preview-view blockquote {
+    background-color: #1A1B24;
+    border: 0px solid;
+    border-color: rgb(252, 246, 1, 0.70) !important;
+    border-left-width: 2px !important;
+    border-radius: 0 0px 0px 0;
+    /* font-family: merriwether, georgia, serif; */
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0 10px;
+    }
+
+
+/***************************************/
 /* link */
+/***************************************/
 a,
 .internal-link,
 .cm-hmd-internal-link,
