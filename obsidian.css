@@ -265,6 +265,7 @@ img
     width: 1.25em;
     height: 1.25em;
     margin: 0;
+    margin-right: 1em;
     box-shadow: 0 0 0.2em #fcf601;
 }
 .markdown-preview-view .task-list-item-checkbox:checked::before {
