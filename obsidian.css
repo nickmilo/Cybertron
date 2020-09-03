@@ -8,11 +8,11 @@
   --text-normal: #5dbcd2;
   --text-faint: #999999;
   --text-title-h1: rgb(252, 246, 1, 0.70);
-  --text-title-h2: rgb(252, 246, 1, 0.60);
-  --text-title-h3: rgb(252, 246, 1, 0.60);
-  --text-title-h4: rgb(252, 246, 1, 0.60);
-  --text-title-h5: rgb(252, 246, 1, 0.60);
-  --text-title-h6: rgb(252, 246, 1, 0.60);
+  --text-title-h2: rgb(252, 246, 1, 0.5);
+  --text-title-h3: #52c1da;
+  --text-title-h4: #bfbfbf;
+  --text-title-h5: #52c1da;
+  --text-title-h6: #bfbfbf;
   --text-link: #99ff99;
   --text-a: #d669bc;
   --text-a-hover: #b3a14b;
