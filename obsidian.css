@@ -7,16 +7,16 @@
   --background-secondary-alt: #000000;
   --text-normal: #5dbcd2;
   --text-faint: #999999;
-  --text-title-h1: #5dbcd2;
-  --text-title-h2: #5dbcd2;
-  --text-title-h3: #5dbcd2;
-  --text-title-h4: #5dbcd2;
-  --text-title-h5: #5dbcd2;
-  --text-title-h6: #5dbcd2;
+  --text-title-h1: rgb(252, 246, 1, 0.70);
+  --text-title-h2: rgb(252, 246, 1, 0.60);
+  --text-title-h3: rgb(252, 246, 1, 0.60);
+  --text-title-h4: rgb(252, 246, 1, 0.60);
+  --text-title-h5: rgb(252, 246, 1, 0.60);
+  --text-title-h6: rgb(252, 246, 1, 0.60);
   --text-link: #99ff99;
   --text-a: #d669bc;
   --text-a-hover: #b3a14b;
-  --text-mark: rgb(252, 246, 1, 0.60); /* SEE HIGHLIGHTER */
+  --text-mark: rgb(252, 246, 1, 0.45); /* SEE HIGHLIGHTER */
   --pre-code: #272524d9;
   --text-highlight-bg: rgba(252, 246, 1, 0.4); /* SEE HIGHLIGHTER */
   --interactive-accent: rgb(252, 246, 1, 0.95);
@@ -36,13 +36,13 @@
 }
 
 strong {
-  color: #b2af01;
+  color: rgb(179, 153, 255, 0.95);
   font-weight: 700;
 }
 
 
 em {
-  color: #ad9df9;
+  color: #b8b894;
 }
 
 
@@ -54,18 +54,22 @@ em {
 mark
 {
   background-color: var(--text-mark) !important;
-  padding-top: 4px;
-  padding-bottom: 1px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 
 .cm-s-obsidian span.cm-highlight {
     color: #0c0c0e;
-    background-color: rgb(252, 246, 1, 0.6);
+    font-weight: 500;
+    background-color: rgb(252, 246, 1, 0.49);
 }
 
 .markdown-preview-view mark {
     color: #0c0c0e;
+    font-weight: 500;
     }
 
 
@@ -83,7 +87,9 @@ mark
 /**********************/
 /* links and brackets */
 /**********************/
-
+.cm-s-obsidian span.cm-formatting-link {
+    color: #d669bc !important;
+}
 
 /**********************/
 /* Graph View */
@@ -99,13 +105,9 @@ mark
     color:  #26798c;
 }
 
-
-
 .graph-view.color-text {
     color: #cccccc;
 }
-
-
 
 .graph-view.color-fill-highlight {
     color: #26798c;
@@ -113,8 +115,6 @@ mark
 .graph-view.color-line-highlight {
     color: #5dbcd2;
 }
-
-
 
 
 /***************************************/
@@ -138,6 +138,8 @@ mark
 /***************************************/
 /* link */
 /***************************************/
+
+
 a,
 .internal-link,
 .cm-hmd-internal-link,
@@ -285,7 +287,6 @@ img
     width: 1.25em;
     height: 1.25em;
     margin: 0;
-    margin-right: 1em;
     box-shadow: 0 0 0.2em #fcf601;
 }
 .markdown-preview-view .task-list-item-checkbox:checked::before {
@@ -680,12 +681,12 @@ side-dock-ribbon-tab-inner is-after-active {
 }
 
 .cm-strong {
-  color: #b2af01;
+  color: rgb(179, 153, 255, 0.95);
   font-weight: 700;
 }
 
 .cm-em {
-  color: #ad9df9;
+  color: #b8b894;
 }
 
 .cm-s-obsidian span.cm-hashtag {
@@ -928,38 +929,6 @@ code
 
 
 
-    /******************/
-    /* Editor Code - from death-au */
-    /* i think this just adds a border to inline code in editor mode */
-    /******************/
-
-
-.cm-s-obsidian span.cm-inline-code {
-  border: 1px solid #757b8a;
-  border-radius: 4px;
-}
-.cm-s-obsidian span.cm-formatting-code.cm-inline-code {
-  border-right-width: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.cm-s-obsidian span.cm-formatting-code.cm-inline-code + span.cm-inline-code {
-  border-right: none;
-  border-left: none;
-  border-radius: 0;
-}
-
-.cm-s-obsidian span.cm-formatting-code.cm-inline-code + span.cm-inline-code + span.cm-formatting-code.cm-inline-code {
-  border-left-width: 0;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-right-width: 1px;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-
 /* Editor CodeBlock TEXT Appearance - */
 .cm-s-obsidian pre.HyperMD-codeblock {     
 	color: #f1f2f3 !important;
@@ -976,11 +945,10 @@ code
 
 
 .markdown-preview-view code {
-color: #d5dadd !important;
-background-color: #525660 !important;
+color: #cccccc !important;
+background-color: #2f3136 !important;
 bottom: -0.1px !important;
 }
-
 
 
 
