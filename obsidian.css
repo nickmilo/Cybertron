@@ -35,6 +35,59 @@
   stroke: var(--interactive-accent-rgb) !important;
 }
 
+
+/**********************/
+/* NEW SUPER GRAPH WITH FILTER */
+/**********************/
+
+.theme-dark .graph-view.color-fill-tag {
+  color: #5dbcd2;
+}
+
+.theme-dark .graph-view.color-fill-attachment {
+  color: #d669bc;
+}
+
+.theme-dark .graph-view.color-fill-unresolved {
+  color: #d669bc;
+}
+
+.theme-dark .graph-view.color-arrow {
+  color: #d669bc;
+}
+
+/**********************/
+/* Graph View */
+/**********************/
+
+.graph-view.color-fill {
+    color: #fcf601;
+}
+.graph-view.color-circle {
+    color: #26798c;
+}
+.graph-view.color-line {
+    color:  #26798c;
+}
+
+.graph-view.color-text {
+    color: #cccccc;
+}
+
+.graph-view.color-fill-highlight {
+    color: #26798c;
+}
+.graph-view.color-line-highlight {
+    color: #5dbcd2;
+}
+
+
+
+/**********************/
+/* BOLD AND ITALTICS */
+/**********************/
+
+
 strong {
   color: rgb(179, 153, 255, 0.95);
   font-weight: 700;
@@ -89,31 +142,6 @@ mark
 /**********************/
 .cm-s-obsidian span.cm-formatting-link {
     color: #d669bc !important;
-}
-
-/**********************/
-/* Graph View */
-/**********************/
-
-.graph-view.color-fill {
-    color: #5dbcd2;
-}
-.graph-view.color-circle {
-    color: #26798c;
-}
-.graph-view.color-line {
-    color:  #26798c;
-}
-
-.graph-view.color-text {
-    color: #cccccc;
-}
-
-.graph-view.color-fill-highlight {
-    color: #26798c;
-}
-.graph-view.color-line-highlight {
-    color: #5dbcd2;
 }
 
 
