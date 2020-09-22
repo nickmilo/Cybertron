@@ -49,7 +49,8 @@
 }
 
 .theme-dark .graph-view.color-fill-unresolved {
-  color: #d669bc;
+  color: #9e8aff;
+  Opacity:1;
 }
 
 .theme-dark .graph-view.color-arrow {
