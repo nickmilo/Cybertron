@@ -177,7 +177,7 @@ a,
 {
   color: var(--text-a) !important;
   text-decoration: none !important;
-  font-family: Avenir !important;
+  font-family: var(--font-family-preview) !important;
 }
 
 /* link hover color */
@@ -294,9 +294,34 @@ img
 }
 
 
+/***************************************/
+/*             Presentation Mode              */
+/***************************************/
 
 
+.reveal h1 {
+    color: rgb(252, 246, 1, 0.70);
+}
 
+.reveal h2 {
+    color: rgb(252, 246, 1, 0.5);
+}
+
+.reveal h3 {
+    color: #52c1da;
+}
+
+.reveal h4 {
+    color: #bfbfbf;
+}
+
+.reveal h5 {
+    color: #52c1da;
+}
+
+.reveal h6 {
+    color: #bfbfbf;
+}
 
 
 /*************/
