@@ -25,8 +25,8 @@
   --blockquote-border: #9e8aff;
   --text-accent: #319cb4;
   --interactive-accent-rgb: #fe8019;
-  --font-family-editor: Avenir, Avenir Next, sans-serif;
-  --font-family-preview: Avenir, Avenir Next, sans-serif;
+  --font-family-editor: Avenir, Avenir Next, var(--default-font), sans-serif;
+  --font-family-preview: Avenir, Avenir Next, var(--default-font), sans-serif;
   --text-selection: #164f92;
 }
 
