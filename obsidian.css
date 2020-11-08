@@ -28,6 +28,7 @@
   --font-family-editor: Avenir, Avenir Next, var(--default-font), sans-serif;
   --font-family-preview: Avenir, Avenir Next, var(--default-font), sans-serif;
   --text-selection: #164f92;
+  --text-on-accent: #2f3136
 }
 
 #graph-view-canvas .links
@@ -1036,8 +1037,6 @@ color: #b3a14b !important;
     color: rgba(252, 246, 1);
 }
 
-
-
 /* Andy Matuschak mode! V2! for 0.7.0! (so... 2.7?) */
 
 /* everything under .mod-root now. Don't want Andy messing with sidebars */
@@ -1132,6 +1131,22 @@ color: #b3a14b !important;
 .workspace-fake-target-overlay {
   background-color: var(--background-primary);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
