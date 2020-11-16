@@ -494,9 +494,11 @@ side-dock-ribbon-tab-inner is-after-active {
 /* LEFT side dock --------- FILE EXPLORER*/
 /*************/
 
+
 .nav-folder-title {  
   color: #cccccc;
   background-color: #0d0d0d;
+  font-weight: 500;
   }
 
 .nav-file-title {  
@@ -990,7 +992,10 @@ code
 }
 
 
-
+.cm-s-obsidian pre.HyperMD-list-line {
+    padding-top: 0.0em;
+    min-height: 1.0em;
+}
 
 
 /******************/
@@ -1004,10 +1009,6 @@ color: #cccccc !important;
 background-color: #2f3136 !important;
 bottom: -0.1px !important;
 }
-
-
-
-
 
 
 /******************/
