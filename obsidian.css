@@ -900,14 +900,6 @@ code
   font-weight: 600;
 }
 
-.markdown-embed
-{
-  padding-left: 8px !important;
-  padding-right: 4px !important;
-  margin-left: 8px !important;
-  margin-right: 4px !important;
-}
-
 
 /* normal text outside of headings and code */
 .markdown-preview-view
@@ -939,13 +931,6 @@ code
   font-weight: 600;
 }
 
-.markdown-embed
-{
-  padding-left: 8px !important;
-  padding-right: 4px !important;
-  margin-left: 8px !important;
-  margin-right: 4px !important;
-}
 
 /* clean up side bar empty state (e.g. unlinked mentions) */
 .search-empty-state
@@ -1010,6 +995,20 @@ background-color: #2f3136 !important;
 bottom: -0.1px !important;
 }
 
+
+.markdown-embed {
+    padding-left: 0px !important;
+    padding-right: 5px !important;
+    margin-left: 10px !important;
+    margin-right: 4px !important;
+}
+
+.markdown-preview-view .markdown-embed, .markdown-preview-view .file-embed {
+    border-top: .25px solid #b3a14b;
+    border-bottom: .25px solid #b3a14b;
+    padding: 0px 0;
+    margin: 10px 0;
+}
 
 /******************/
 /* Naked Embeds - But I'm keeping Border and Scroll! */
