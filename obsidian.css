@@ -417,7 +417,9 @@ button.mod-cta {
 }
 
 
-
+.cm-hmd-frontmatter {
+    font-size: 13px;
+}
 
 
 
@@ -863,6 +865,7 @@ but font weight does. */
   font-size: 16px;
   font-weight: bold;
   color: var(--text-title-h6);
+  
 }
 
 
@@ -987,7 +990,9 @@ code
 /* Preview Code Appearance */
 /******************/
 
-
+br + .internal-embed {
+    margin-top: -2rem;
+}
 
 .markdown-preview-view code {
 color: #cccccc !important;
@@ -1019,12 +1024,12 @@ bottom: -0.1px !important;
 
 
 .markdown-embed-link {
-color: #59a2c5 !important;
+color: #5bb983 !important;
 right: 2px !important;
 }
 
 .markdown-embed-link:hover {
-color: #3DD87F !important;
+color: #38dc7f !important;
 }
 
 
@@ -1137,8 +1142,125 @@ color: #3DD87F !important;
 
 
 
+/***************************************/
+/* Transcluded notes embeds - By Ryan JA Murphy */
+/***************************************/
 
+.markdown-preview-view .markdown-embed {
+  padding:0 calc(var(--nested-padding) / 2) 0 var(--nested-padding);
+}
+.markdown-embed-title {
+  line-height:18px;
+  height:24px;
+  display: none;
+}
+.markdown-embed .markdown-preview-sizer {
+    padding-left: 1em !important;
+    padding-top: .5em !important;
+    min-height: 0em !important;
+}
+.markdown-embed .markdown-preview-sizer:first-child ul {
+  margin-block-start:2px;
+}
+.markdown-embed .markdown-preview-section:last-child p,
+.markdown-embed .markdown-preview-section:last-child ul {
+  margin-block-end:2px;
+}
+.markdown-embed-link,
+.file-embed-link {
+  top:0px;
+  right:0;
+  text-align:right;
+}
+.file-embed-link svg,
+.markdown-embed-link svg {
+  width:16px;
+  opacity:0;
+}
+.markdown-embed:hover .file-embed-link svg,
+.markdown-embed:hover .markdown-embed-link svg {
+  opacity:1;
+}
+.markdown-preview-view .markdown-embed-content > .markdown-preview-view {
+  max-height: none !important;}
+.markdown-embed .markdown-preview-view {
+  padding:0;}
+.internal-embed .markdown-embed {
+  border:0;
+  border:.5px solid var(--background-tertiary);
+  border-left:2px solid #37aec8;
+  border-radius:0;
+  padding-left: 0;
+  background-color: var(--background-primary-alt);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.internal-embed .markdown-embed:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transform: translate3d(0px, -3px, 0px);
+}
+br + .internal-embed {
+    margin-top: -1.75rem;
+}
+.markdown-embed-title ~ .markdown-embed-link,
+.internal-embed[src*="#"] .markdown-embed-link {
+  right:0 !important;
+  width:3%;
+}
 
+.internal-embed:not([src*="#^"]) .markdown-embed-link {
+    left: auto;
+}
+.internal-embed[src*="^"] .markdown-preview-sizer {
+    padding-left: .25em !important;
+    padding-top: 0 !important;
+}
+li > div.internal-embed {
+    display: inline-flex;
+    width: 99%
+}
+
+li .internal-embed .markdown-embed {
+    width: 99%;
+}
+
+.markdown-embed-title {
+  line-height:18px;
+  height:24px;
+  display: none;
+}
+.markdown-embed .markdown-preview-sizer {
+    padding-left: 1em;
+    padding-top: .5em;
+}
+
+.popover {
+  box-shadow:0 20px 40px var(--background-modifier-box-shadow);
+  pointer-events:auto !important;
+  border:1px solid var(--background-modifier-border);
+}
+.popover .markdown-embed-link {
+  display:none;
+}
+.popover .markdown-embed .markdown-preview-view {
+  padding-bottom:1em;
+}
+.popover.hover-popover .markdown-embed .markdown-embed-content {
+  max-height: none !important;
+}
+
+.popover.hover-popover .internal-embed[src*="^"] .markdown-embed {
+    height: 100%;
+    max-height: none;
+}
+
+.popover.hover-popover .internal-embed[src*="^"] {
+    height: 3.25em;
+}
+
+.popover.hover-popover {
+  max-height:40vh;
+}
 
 
 
