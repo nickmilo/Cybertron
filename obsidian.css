@@ -335,13 +335,13 @@ img
 /* task lists! (DEATH AU - I'm proud of this, but could use improvement) */
 .markdown-preview-view .task-list-item-checkbox {
     -webkit-appearance: none;
-    top: 1.3px !important;
+    top: 8px !important;
     box-sizing: border-box;
     border: 1px solid  var(--accent-2);
     position: relative;
     width: 1.25em;
     height: 1.25em;
-    margin: 0;
+    margin-right: 2%;
     box-shadow: 0 0 0.2em #fcf601;
 }
 .markdown-preview-view .task-list-item-checkbox:checked::before {
