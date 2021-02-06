@@ -3,16 +3,16 @@
 {
   --background-primary: #2f3136;
   --background-primary-alt: #36393f;
-  --background-secondary: #202225;
-  --background-secondary-alt: #000000;
+  --background-secondary: #141414; /*202225*/ /*141414*/
+  --background-secondary-alt: #222222;
   --text-normal: #5dbcd2;
   --text-faint: #999999;
-  --text-title-h1: rgb(252, 246, 1, 0.70);
-  --text-title-h2: rgb(252, 246, 1, 0.5);
+  --text-title-h1: rgb(252, 246, 1, 0.75);
+  --text-title-h2: #b9adff; 
   --text-title-h3: #52c1da;
-  --text-title-h4: #bfbfbf;
-  --text-title-h5: #52c1da;
-  --text-title-h6: #bfbfbf;
+  --text-title-h4: #8ebe8e;
+  --text-title-h5: #d8d8d8;
+  --text-title-h6: #afafaf;
   --text-link: #99ff99;
   --text-a: #d669bc;
   --text-a-hover: #b3a14b;
@@ -21,21 +21,21 @@
   --text-highlight-bg: rgba(252, 246, 1, 0.4); /* SEE HIGHLIGHTER */
   --interactive-accent: rgb(252, 246, 1, 0.95);
   --interactive-before: #5e6565;
-  --background-modifier-border: #595959;
+  --background-modifier-border: #595959; /*595959*/
   --blockquote-border: #9e8aff;
   --text-accent: #319cb4;
   --interactive-accent-rgb: #fe8019;
   --font-family-editor: Avenir, Avenir Next, var(--default-font), sans-serif;
   --font-family-preview: Avenir, Avenir Next, var(--default-font), sans-serif;
   --text-selection: #164f92;
-  --text-on-accent: #2f3136
+  --text-on-accent: #2f3136;
+  --scrollbar-bg: rgb(20, 20, 20, 0.0);
+  --scrollbar-thumb-bg: #595959;
 }
-
 #graph-view-canvas .links
 {
   stroke: var(--interactive-accent-rgb) !important;
 }
-
 
 /**********************/
 /* NEW SUPER GRAPH WITH FILTER */
@@ -399,7 +399,7 @@ element.style {
     right: 10px;
     font-size: 12px;
     color: var(--text--accent);
-    background-color: #000000;
+    background-color: #141414;
     line-height: 12px;
     border-radius: 3px;
     padding: 2px 4px;
@@ -407,7 +407,7 @@ element.style {
 
 .list-item:hover .list-item-ending-flair {
     color: var(--text--accent);
-    background-color: #000000;
+    background-color: #141414;
 }
 
 
@@ -430,34 +430,34 @@ button.mod-cta {
 
 
 .side-dock-ribbon {
-  background-color: #000000;
+  background-color: #141414;
 }
 
 .side-dock-ribbon-tab-inner {
-  background-color: #000000;
+  background-color: #141414;
 }
 
 .side-dock-ribbon-action {
-  background-color: #000000;
+  background-color: #141414;
 }
 
 
 /* LEFT side dock ----- RIBBON FAILED ATTEMPTS*/
 side-dock-ribbon-tab is-before-active {
-  color: #000000;
-  background-color: #000000;
+  color: #141414;
+  background-color: #141414;
 }
 side-dock-ribbon-before is-before-active {
-  color: #000000;
-  background-color: #000000;
+  color: #141414;
+  background-color: #141414;
 }
 side-dock-ribbon-tab-inner is-before-active {
-  color: #000000;
-  background-color: #000000;
+  color: #141414;
+  background-color: #141414;
 }
 side-dock-ribbon-tab-inner {
-  color: #000000;
-  background-color: #000000;
+  color: #141414;
+  background-color: #141414;
 }
 
 .side-dock-plugin-panel.mod-file-explorer,
@@ -465,14 +465,14 @@ side-dock-ribbon-tab-inner {
 .side-dock-ribbon-tab.is-after-active,
 .side-dock-ribbon-before.is-before-active,
 .side-dock-ribbon-after.is-before-active {
-   background-color: #000000;
+   background-color: #141414;
 }
 
 
 
 
 side-dock-ribbon-tab-inner is-after-active {
-  background-color: #000000;
+  background-color: #141414;
 }
 
 .side-dock-ribbon-tab.is-active {
@@ -481,15 +481,15 @@ side-dock-ribbon-tab-inner is-after-active {
 
 
 .side-dock-title {
-  background-color: #0d0d0d;
+  background-color: #141414;
   }
 
 .nav-buttons-container {
-  background-color: #0d0d0d;
+  background-color: #141414;
   }
   
 .nav-header {
-  background-color: #0d0d0d;
+  background-color: #141414;
   }
 
 /*************/
@@ -499,17 +499,17 @@ side-dock-ribbon-tab-inner is-after-active {
 
 .nav-folder-title {  
   color: #cccccc;
-  background-color: #0d0d0d;
+  background-color: #141414;
   font-weight: 500;
   }
 
 .nav-file-title {  
   color: #999999;
-  background-color: #0d0d0d;
+  background-color: #141414;
   }
   
 .nav-folder-children {
-    background-color: #0d0d0d;
+    background-color: #141414;
 }
 
 
@@ -520,16 +520,16 @@ side-dock-ribbon-tab-inner is-after-active {
 /*Search result TEXT*/
 .search-result-file-matches{  
   color: #999999;
-  background-color: #0d0d0d;}
+  background-color: #141414;}
   
 .search-result-file-match:hover {
     color: #d669bc;
-    background-color: #0d0d0d;}
+    background-color: #141414;}
 
 /*Search result TITLE*/
 .search-result-file-title {  
   color: #5dbcd2;
-  background-color: #0d0d0d;}
+  background-color: #141414;}
   
 .search-result-file-title:hover {
 	color: #d669bc;
@@ -538,12 +538,12 @@ side-dock-ribbon-tab-inner is-after-active {
 /*Search result MATCHED TEXT*/
 .search-result-file-matched-text {  
   color: #cccccc;
-  background-color: #0d0d0d;}
+  background-color: #141414;}
 
 /*Search result BACKGROUND*/
 .search-result-container {  
   color: #999999;
-  background-color: #0d0d0d;}
+  background-color: #141414;}
 
 
 /*************/
@@ -1042,102 +1042,6 @@ color: #38dc7f !important;
     color: rgba(252, 246, 1);
 }
 
-/* Andy Matuschak mode! V2! for 0.7.0! (so... 2.7?) */
-
-/* everything under .mod-root now. Don't want Andy messing with sidebars */
-/* also, Andy only makes sense for vertical splits, at the root level, right? */
-.mod-root.workspace-split.mod-vertical { 
-  overflow-x:auto; 
-  --header-width: 36px; /* <- 36px is the header height in the default theme */
-}
-.mod-root.workspace-split.mod-vertical > div { 
-  min-width: calc(700px + var(--header-width)); /* <-- 700px is the default theme's "readable" max-width */
-  box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.25);
-  position:sticky;
-  left:0;
-}
-
-/* shift sticky position, so titles will stack up to the left */
-/* This will currently stack to a maximum of 10 before resetting */
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-8) { left: calc(var(--header-width) * 0); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-7) { left: calc(var(--header-width) * 1); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-6) { left: calc(var(--header-width) * 2); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-5) { left: calc(var(--header-width) * 3); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-4) { left: calc(var(--header-width) * 4); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-3) { left: calc(var(--header-width) * 5); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-2) { left: calc(var(--header-width) * 6); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n-1) { left: calc(var(--header-width) * 7); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n+0) { left: calc(var(--header-width) * 8); }
-.mod-root.workspace-split.mod-vertical > div:nth-child(10n+1) { left: calc(var(--header-width) * 9); }
-
-/* now it's time for the fancy vertical titles */
-
-/* first we'll add a bit of gap for the title to sit inside of */
-.workspace-leaf-content {
-  padding-left: var(--header-width);
-  position: relative;
-}
-
-/* this is where the magic happens */
-.view-header {
-  writing-mode: vertical-lr;
-  border-right: 1px solid var(--background-secondary-alt);
-  border-left: 2px solid var(--background-secondary-alt);
-  border-top: none;
-  border-bottom: none;
-  height: auto;
-  width: var(--header-width);
-  position: absolute;
-  left:0;
-  top:0;
-  bottom:0;
-}
-
-/* active titles have different border colours */
-.workspace-leaf.mod-active .view-header {
-  border-right: 2px solid var(--interactive-accent);
-  border-bottom: none;
-}
-
-/* unset the title container height and swap padding */
-.view-header-title-container {
-  height: unset;
-  padding-left: unset;
-  padding-top: 5px;
-}
-
-/* fix the long-title-obscuring shadows */
-.view-header-title-container:after {
-  width: 100%;
-  height: 30px;
-  top:unset;
-  bottom: 0;
-  background: linear-gradient(to bottom, transparent, var(--background-secondary));
-}
-.workspace-leaf.mod-active .view-header-title-container:after {
-  background: linear-gradient(to bottom, transparent, var(--background-primary-alt));
-}
-
-/* swap the padding/margin around for the header and actions icons */
-.view-header-icon, .view-actions {
-  padding: 10px 5px;
-}
-.view-action {
-  margin: 8px 0;
-}
-
-/* get rid of the gap left by the now-missing horizontal title */
-.view-content {
-  height: 100%;
-}
-
-/* make the fake drop target overlay have a background so you can see it. */
-/* TODO: figure out how the fake target overlay works so we can put the title back, too */
-.workspace-fake-target-overlay {
-  background-color: var(--background-primary);
-}
-
-
 
 
 /***************************************/
@@ -1183,8 +1087,9 @@ color: #38dc7f !important;
   display: none;
 }
 .markdown-embed .markdown-preview-sizer {
-    padding-left: 1em !important;
-    padding-top: .5em !important;
+    padding-left: 0em !important;
+    padding-top: .25em !important;
+    padding-bottom: 0em !important;
     min-height: 0em !important;
 }
 .markdown-embed .markdown-preview-sizer:first-child ul {
@@ -1314,3 +1219,82 @@ ul ul::before { left: -1em; top: 0; bottom: 0; }
 
 /* rule line when there are checkboxes*/
 ul .task-list-item ul::before {left: 0.15em !important}
+
+
+/***************************************/
+/*    Tiny Tweaks now that Nick knows a smidgen more */
+/***************************************/
+
+/* To make all my hovering actions the same */
+.side-dock-ribbon-tab:hover, 
+.side-dock-ribbon-tab-inner:hover, 
+.side-dock-ribbon-action:hover, 
+.side-dock-ribbon-action.is-active:hover,
+.nav-action-button:hover, 
+.side-dock-collapse-btn:hover
+.workspace-tab-header-inner:hover,
+.workspace-tab-header-inner-icon:hover {
+color: var(--text-normal);
+}
+
+/* The "other" Vertical Lines */
+.workspace-ribbon.mod-left, .workspace-ribbon.mod-left.is-collapsed {
+  border-right-color: rgb(158, 138, 255, .66);
+}
+
+.workspace-ribbon.mod-right, .workspace-ribbon.mod-right.is-collapsed {
+  border-left-color: rgb(61, 216, 127, .66);
+}
+
+/* The "other" Vertical Lines - The "Resizers" */
+.workspace-split.mod-vertical > * > 
+.workspace-leaf-resize-handle, 
+.workspace-split.mod-left-split > /*Can't figure out how to hide these bars*/
+.workspace-leaf-resize-handle, 
+.workspace-split.mod-right-split > /*Can't figure out how to hide these bars*/
+.workspace-leaf-resize-handle {
+  right: 0px;
+  top: 0px;
+  width: 2px;
+  height: 100%;
+  color: #d669bc;
+  background-color:rgb(20, 20, 20,0.0);
+  z-index: rgb(20, 20, 20,0.0);
+  cursor: col-resize;
+}
+
+
+/* Bottom Status Bar */
+.sync-status-icon.mod-success {
+  color: rgb(61, 216, 127, .44);
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 8px;
+  -webkit-border-radius: 0px;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--scrollbar-bg);
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:active {
+  -webkit-border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-bg);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgb(93, 188, 210, .9);
+}
+
+/* Nick's Tiny Sliding Panes Tweaks */
+.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+  border-top-right-radius: 0px; /*instead of 6px*/
+}
