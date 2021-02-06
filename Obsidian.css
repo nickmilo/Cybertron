@@ -1324,7 +1324,7 @@ color: var(--text-normal);
 
 /* Settings Popup */
 button.mod-cta {
-  background-color: rgb(252, 246, 1, 0.75);
+  background-color: rgb(252, 246, 1, 0.90);
   color: var(--text-on-accent);
 }
 
