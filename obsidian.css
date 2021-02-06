@@ -31,6 +31,8 @@
   --text-on-accent: #2f3136;
   --scrollbar-bg: rgb(20, 20, 20, 0.0);
   --scrollbar-thumb-bg: #595959;
+  --background-modifier-error: #36393f;
+  --background-modifier-success: #36393f;
 }
 #graph-view-canvas .links
 {
@@ -1297,4 +1299,36 @@ color: var(--text-normal);
 /* Nick's Tiny Sliding Panes Tweaks */
 .workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
   border-top-right-radius: 0px; /*instead of 6px*/
+}
+
+/* Publish Pop-up*/
+.file-tree-item.mod-new .flair {
+  background-color: var(--background-modifier-success);
+  color: #5dd263;
+}
+
+.file-tree-item.mod-deleted .flair, .file-tree-item.mod-to-delete .flair {
+  background-color: var(--background-modifier-error);
+}
+
+.file-tree-item .flair {
+  line-height: 1.4;
+  padding: 3px 8px;
+  color: #e65959;
+}
+
+.file-tree-item.mod-changed .flair {
+  background-color: var(--background-modifier-error);
+  color: rgb(252, 246, 1, 0.75);
+}
+
+/* Settings Popup */
+button.mod-cta {
+  background-color: rgb(252, 246, 1, 0.90);
+  color: var(--text-on-accent);
+}
+
+button.mod-cta:hover {
+  background-color: #9e8aff;
+  color: rgb(252, 246, 1, 0.95);
 }
