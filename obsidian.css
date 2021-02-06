@@ -1332,3 +1332,15 @@ button.mod-cta:hover {
   background-color: #9e8aff;
   color: rgb(252, 246, 1, 0.95);
 }
+
+/* Tag List in Right Sidebar*/
+.tree-item-self {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0px;
+  padding-right: 6px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  border-radius: 3px;
+  color: var(--text-muted);
+}
