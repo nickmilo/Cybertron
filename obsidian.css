@@ -1054,7 +1054,7 @@ color: #38dc7f !important;
     -webkit-app-region: no-drag;
     padding: 0 10px;
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.9;
     display: inline-block;
     color: #52c1da;
 }
@@ -1070,7 +1070,7 @@ color: #38dc7f !important;
     font-size: 12px;
     text-align: center;
     letter-spacing: 0.05em;
-    opacity: 0.2;
+    opacity: 0.9;
     color: #52c1da;
 }
 
