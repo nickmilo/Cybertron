@@ -1350,7 +1350,17 @@ button.mod-cta:hover {
   background-color: var(--background-modifier-error);
   color: #ff7575;
 }
-
 .setting-hotkey-icon.setting-delete-hotkey:hover {
   color: #5dbcd2;
 }
+
+button.mod-warning {
+  background-color: var(--background-modifier-error);
+  color: #b9adff;
+}
+button.mod-warning:hover {
+  background-color: var(--background-modifier-error);
+  color: #ff7575;
+}
+
+
