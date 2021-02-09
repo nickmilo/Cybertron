@@ -1344,3 +1344,13 @@ button.mod-cta:hover {
   border-radius: 3px;
   color: var(--text-muted);
 }
+
+/* Making sure "Conflict" text looks good*/
+.theme-dark .setting-hotkey.has-conflict  {
+  background-color: var(--background-modifier-error);
+  color: #ff7575;
+}
+
+.setting-hotkey-icon.setting-delete-hotkey:hover {
+  color: #5dbcd2;
+}
