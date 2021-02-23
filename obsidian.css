@@ -303,27 +303,27 @@ img
 
 
 .reveal h1 {
-    color: rgb(252, 246, 1, 0.70);
+    color: var(--text-title-h1);
 }
 
 .reveal h2 {
-    color: rgb(252, 246, 1, 0.5);
+    color: var(--text-title-h2);
 }
 
 .reveal h3 {
-    color: #52c1da;
+    color: var(--text-title-h3);
 }
 
 .reveal h4 {
-    color: #bfbfbf;
+    color: var(--text-title-h4);
 }
 
 .reveal h5 {
-    color: #52c1da;
+    color: var(--text-title-h5);
 }
 
 .reveal h6 {
-    color: #bfbfbf;
+    color: var(--text-title-h6);
 }
 
 
