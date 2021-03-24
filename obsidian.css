@@ -1431,3 +1431,6 @@ mark.green{ --text-highlight-rgb: var(--fluro-green-rgb); }
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+
+/* This is to hide queries in Preview Mode. Thanks Kassapa!*/
+.markdown-preview-view .internal-query.is-embed .internal-query-header{ display:none; }
