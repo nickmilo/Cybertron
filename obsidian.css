@@ -1,12 +1,15 @@
-
 .theme-dark
 {
   --background-primary: #2f3136;
   --background-primary-alt: #36393f;
-  --background-secondary: #141414; /*202225*/ /*141414*/
+  --background-secondary: #141414;
   --background-secondary-alt: #222222;
   --text-normal: #5dbcd2;
   --text-faint: #999999;
+  --text-muted: #aaaaaa;
+  --text-selection: #164f92;
+  --text-on-accent: #5dbcd2;
+  --text-accent: #319cb4;
   --text-title-h1: rgb(252, 246, 1, 0.75);
   --text-title-h2: #b9adff; 
   --text-title-h3: #52c1da;
@@ -17,22 +20,22 @@
   --text-a: #d669bc;
   --text-a-hover: #b3a14b;
   --text-mark: rgb(252, 246, 1, 0.45); /* SEE HIGHLIGHTER */
-  --pre-code: #272524d9;
+  --pre-code: #40444d;
   --text-highlight-bg: rgba(252, 246, 1, 0.4); /* SEE HIGHLIGHTER */
   --interactive-accent: rgb(252, 246, 1, 0.95);
   --interactive-before: #5e6565;
+  --interactive-hover: #36393f; /* for Calendar Plugin*/
   --background-modifier-border: #595959; /*595959*/
   --blockquote-border: #9e8aff;
-  --text-accent: #319cb4;
   --interactive-accent-rgb: #fe8019;
   --font-family-editor: Avenir, Avenir Next, var(--default-font), sans-serif;
   --font-family-preview: Avenir, Avenir Next, var(--default-font), sans-serif;
-  --text-selection: #164f92;
-  --text-on-accent: #2f3136;
   --scrollbar-bg: rgb(20, 20, 20, 0.0);
   --scrollbar-thumb-bg: #595959;
   --background-modifier-error: #36393f;
   --background-modifier-success: #36393f;
+  --background-modifier-form-field: #2f3136;
+  --background-modifier-form-field-highlighted: #2f3136;
 }
 #graph-view-canvas .links
 {
@@ -131,15 +134,32 @@ mark
 
 
 
+/*settings pop-up*/
 
 .modal-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(252, 246, 1, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(252, 246, 1, 0.1);
 }
+.modal {
+background-color: var(--background-primary);
+border-radius: 4px;
+border: 1px solid var(--background-primary);
+box-shadow: 0 2px 8px var(--background-modifier-box-shadow);
+max-width: 70vw;
+padding: 30px 50px;
+position: relative;
+min-width: 560px;
+}
+
+horizontal-tab-content, .vertical-tab-content {
+background-color: var(--background-primary);
+padding: 5px 30px;
+}
+
 
 /**********************/
 /* links and brackets */
@@ -387,13 +407,13 @@ img
 element.style {
 }
 .workspace-leaf-content[data-type='search'] .nav-action-button.is-active {
-    background-color: rgb(252, 246, 1, 0.25);
-    color: var(--text--accent);
+    background-color: var(--background-primary);
+    color: var(--text-accent);
 }
 
 .workspace-leaf-content[data-type='search'] .nav-action-button.is-active, .workspace-leaf-content[data-type='backlink'] .nav-action-button.is-active {
-    background-color: rgb(252, 246, 1, 0.25);
-    color: var(--text--accent);
+    background-color: var(--background-primary);
+    color: var(--text-accent);
 }
 
 .list-item-ending-flair {
@@ -401,16 +421,16 @@ element.style {
     top: 7px;
     right: 10px;
     font-size: 12px;
-    color: var(--text--accent);
-    background-color: #141414;
+    color: var(--text-accent);
+    background-color: var(--background-secondary-alt);
     line-height: 12px;
     border-radius: 3px;
     padding: 2px 4px;
 }
 
 .list-item:hover .list-item-ending-flair {
-    color: var(--text--accent);
-    background-color: #141414;
+    color: var(--text-accent);
+    background-color: var(--background-secondary-alt);
 }
 
 
@@ -972,14 +992,14 @@ code
 /******************/
 
 .CodeMirror-code span.cm-inline-code {     
-	color: #f1f2f3 !important;
+	color: #d4d4d4 !important;
 }
 
 
 
 /* Editor CodeBlock TEXT Appearance - */
 .cm-s-obsidian pre.HyperMD-codeblock {     
-	color: #f1f2f3 !important;
+	color: #d4d4d4 !important;
 }
 
 
@@ -998,8 +1018,8 @@ br + .internal-embed {
 }
 
 .markdown-preview-view code {
-color: #cccccc !important;
-background-color: #2f3136 !important;
+color: #d4d4d4 !important;
+background-color: var(--pre-code) !important;
 bottom: -0.1px !important;
 }
 
@@ -1325,13 +1345,25 @@ color: var(--text-normal);
 
 /* Settings Popup */
 button.mod-cta {
-  background-color: rgb(252, 246, 1, 0.90);
+  background-color: var(--background-primary);
   color: var(--text-on-accent);
+  border: 1px solid var(--background-modifier-border);
 }
 
 button.mod-cta:hover {
-  background-color: #9e8aff;
-  color: rgb(252, 246, 1, 0.95);
+  background-color: var(--background-primary);
+  color: var(--text-on-accent);
+  border: 1px solid var(--interactive-accent);
+}
+
+.tree-item-self:hover .tree-item-flair {
+  background-color: var(--interactive-accent);
+  color: var(--background-secondary-alt)
+}
+
+.flair.mod-pop {
+  background-color: var(--background-primary);
+  color: var(--text-on-accent);
 }
 
 /* Tag List in Right Sidebar*/
@@ -1434,3 +1466,28 @@ mark.green{ --text-highlight-rgb: var(--fluro-green-rgb); }
 
 /* This is to hide queries in Preview Mode. Thanks Kassapa!*/
 .markdown-preview-view .internal-query.is-embed .internal-query-header{ display:none; }
+
+/*fixing tag pane selected button thing*/
+.nav-action-button.is-active {
+  background-color: var(--background-primary);
+  color: var(--text-accent);
+}
+
+.nav-action-button.is-active:hover {
+  background-color: var(--background-primary);
+  color: var(--text-accent);
+}
+
+/*fixing YAML tag color*/
+.frontmatter-container .tag, .frontmatter-container .frontmatter-alias {
+  text-decoration: none;
+  background-color: var(--background-secondary-alt);
+  border-radius: 30px;
+  color: var(--text-a);
+  font-size: 0.9em;
+  padding: 2px 8px;
+  margin: 2px 4px;
+  line-height: 19px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
