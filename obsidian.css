@@ -23,6 +23,8 @@
   --pre-code: #40444d;
   --text-highlight-bg: rgba(252, 246, 1, 0.4); /* SEE HIGHLIGHTER */
   --interactive-accent: rgb(252, 246, 1, 0.95);
+  --interactive-accent-muted: rgb(252, 246, 1, 0.55);
+  --interactive-accent-hover: #9e8aff; /* for Calendar Plugin*/
   --interactive-before: #5e6565;
   --interactive-hover: #36393f; /* for Calendar Plugin*/
   --background-modifier-border: #595959; /*595959*/
@@ -404,18 +406,6 @@ img
 }
 
 
-element.style {
-}
-.workspace-leaf-content[data-type='search'] .nav-action-button.is-active {
-    background-color: var(--background-primary);
-    color: var(--text-accent);
-}
-
-.workspace-leaf-content[data-type='search'] .nav-action-button.is-active, .workspace-leaf-content[data-type='backlink'] .nav-action-button.is-active {
-    background-color: var(--background-primary);
-    color: var(--text-accent);
-}
-
 .list-item-ending-flair {
     position: absolute;
     top: 7px;
@@ -575,7 +565,7 @@ side-dock-ribbon-tab-inner is-after-active {
 
 
 .side-dock-ribbon-tab.is-active .side-dock-ribbon-tab-inner:hover {
-    color: #5dbcd2 !important;
+    color: var(--text-normal) !important;
     background-color: #1a1a1a;
 }
 
@@ -585,8 +575,8 @@ side-dock-ribbon-tab-inner is-after-active {
     background-color: #1a1a1a;
 }
 
-.nav-file-tag{ color: #5dbcd2; } for the PNG text, but can't specifically target "PNG", just all of those filetype tags.
-.nav-file.is-active .nav-file-tag { color: #5dbcd2; }
+.nav-file-tag{ color: var(--text-normal); } for the PNG text, but can't specifically target "PNG", just all of those filetype tags.
+.nav-file.is-active .nav-file-tag { var(--text-normal); }
 
 
 
@@ -1467,15 +1457,28 @@ mark.green{ --text-highlight-rgb: var(--fluro-green-rgb); }
 /* This is to hide queries in Preview Mode. Thanks Kassapa!*/
 .markdown-preview-view .internal-query.is-embed .internal-query-header{ display:none; }
 
-/*fixing tag pane selected button thing*/
+/* Active buttons */
+.workspace-leaf-content[data-type='search'] 
 .nav-action-button.is-active {
   background-color: var(--background-primary);
-  color: var(--text-accent);
+  color: var(--text-normal);
+}
+
+.workspace-leaf-content[data-type='backlink'] 
+.nav-action-button.is-active {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+/*TAG PANE selected button thing*/
+.nav-action-button.is-active {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 .nav-action-button.is-active:hover {
   background-color: var(--background-primary);
-  color: var(--text-accent);
+  color: var(--text-normal);
 }
 
 /*fixing YAML tag color*/
