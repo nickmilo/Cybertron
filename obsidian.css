@@ -360,13 +360,12 @@ img
     -webkit-appearance: none;
     top: 1.8px !important;
     box-sizing: border-box;
-    border: .5px solid  #5e922d;
+    border: 1px solid  #888888;
     position: relative;
     width: 1em;
     height: 1em;
     margin: 0;
     margin-right: .7em;
-    box-shadow: 0 0 0.15em #ccc900;
 }
 
 
@@ -378,7 +377,7 @@ img
     line-height: 1em;
     width:1em;
     text-align:center;
-    text-shadow: 0 0 0.1em #aaa701;
+    text-shadow: 0 0 0.1em #8d8d8d;
 }
 
 
@@ -671,8 +670,6 @@ side-dock-ribbon-tab-inner is-after-active {
 
 
 
-
-
 /* EDITOR Text (outside of headings and code) */
 
 .cm-s-obsidian
@@ -731,6 +728,7 @@ side-dock-ribbon-tab-inner is-after-active {
   font-weight: 500;
   font-size: 20px;
   font-weight: bold;
+  line-height: 30px;
   color: var(--text-title-h4);
 }
 
@@ -740,6 +738,7 @@ side-dock-ribbon-tab-inner is-after-active {
   font-weight: 500;
   font-size: 18px;
   font-weight: bold;
+  line-height: 30px;
   color: var(--text-title-h5);
 }
 
@@ -749,6 +748,7 @@ side-dock-ribbon-tab-inner is-after-active {
   font-weight: 500;
   font-size: 16px;
   font-weight: bold;
+  line-height: 30px;
   color: var(--text-title-h6);
 }
 
@@ -794,9 +794,15 @@ but font weight does. */
 
 
 
+
+
+
 /******************/
 /* PREVIEW section */
 /******************/
+
+
+
 
 
 
@@ -811,6 +817,8 @@ but font weight does. */
   color: var(--text-normal);
   padding-left: 10% !important;
   padding-right: 10% !important;
+    line-height: 22px;
+
 }
 
 .mod-single-child .markdown-preview-view
@@ -830,8 +838,10 @@ but font weight does. */
 {
   font-family: var(--font-family-preview);
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: bold;
+  line-height: 36px;
+  margin-bottom: 15px;
   color: var(--text-title-h1);
 }
 
@@ -839,8 +849,9 @@ but font weight does. */
 {
   font-family: var(--font-family-preview);
   font-weight: 500;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
+  line-height: 34px;
   color: var(--text-title-h2);
 }
 
@@ -848,8 +859,9 @@ but font weight does. */
 {
   font-family: var(--font-family-preview);
   font-weight: 500;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: bold;
+  line-height: 32px;
   color: var(--text-title-h3);
 }
 
@@ -859,6 +871,7 @@ but font weight does. */
   font-weight: 500;
   font-size: 20px;
   font-weight: bold;
+  line-height: 28px;
   color: var(--text-title-h4);
 }
 
@@ -868,6 +881,7 @@ but font weight does. */
   font-weight: 500;
   font-size: 18px;
   font-weight: bold;
+  line-height: 27px;
   color: var(--text-title-h5);
 }
 
@@ -877,6 +891,7 @@ but font weight does. */
   font-weight: 500;
   font-size: 16px;
   font-weight: bold;
+  line-height: 24px;
   color: var(--text-title-h6);
   
 }
@@ -1231,7 +1246,7 @@ ul ul::before {
 ul ul::before { left: -1em; top: 0; bottom: 0; }
 
 /* rule line when there are checkboxes*/
-ul .task-list-item ul::before {left: 0.15em !important}
+ul .task-list-item ul::before {left: -1.03em !important}
 
 
 /***************************************/
