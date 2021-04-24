@@ -151,7 +151,7 @@ background-color: var(--background-primary);
 border-radius: 4px;
 border: 1px solid var(--background-primary);
 box-shadow: 0 2px 8px var(--background-modifier-box-shadow);
-max-width: 70vw;
+
 padding: 30px 50px;
 position: relative;
 min-width: 560px;
@@ -513,6 +513,8 @@ side-dock-ribbon-tab-inner is-after-active {
   color: #cccccc;
   background-color: #141414;
   font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: -2px;
   }
 
 .nav-file-title {  
@@ -677,8 +679,8 @@ side-dock-ribbon-tab-inner is-after-active {
   font-family: var(--font-family-editor);
   font-size: 15px;
   color: var(--text-normal);
-  padding-left: 8% !important;
-  padding-right: 4% !important;
+  padding-left: 3% !important;
+  padding-right: 0% !important;
 }
 
 .mod-single-child .cm-s-obsidian
@@ -1012,6 +1014,7 @@ code
     padding-top: 0.0em;
     min-height: 1.0em;
 }
+
 
 
 /******************/
