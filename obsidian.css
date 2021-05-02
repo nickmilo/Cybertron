@@ -10,11 +10,11 @@
   --text-selection: #164f92;
   --text-on-accent: #5dbcd2;
   --text-accent: #319cb4;
-  --text-title-h1: rgb(252, 246, 1, 0.75);
+  --text-title-h1: rgba(252, 246, 1, 0.75);
   --text-title-h2: #b9adff; 
   --text-title-h3: #52c1da;
-  --text-title-h4: #8ebe8e;
-  --text-title-h5: #d8d8d8;
+  --text-title-h4: rgba(252, 246, 1, 0.65);
+  --text-title-h5: #cccccc; /*d8d8d8*/
   --text-title-h6: #afafaf;
   --text-link: #99ff99;
   --text-a: #d669bc;
@@ -98,7 +98,7 @@
 
 
 strong {
-  color: rgb(179, 153, 255, 0.95);
+  color: #b399fff2;
   font-weight: 700;
 }
 
@@ -172,18 +172,20 @@ padding: 5px 30px;
 
 
 /***************************************/
-/*             Blockquote              */
+/*             Blockquote         1a1b24      */
 /***************************************/
 
 /* for preview */
 .markdown-preview-view blockquote {
-    background-color: #1A1B24;
+    background-color: #1a1b24;
     border: 0px solid;
     border-color: rgb(252, 246, 1, 0.70) !important;
     border-left-width: 2px !important;
     border-radius: 0 0px 0px 0;
     /* font-family: merriwether, georgia, serif; */
-    font-size: 1em;
+    font-family:georgia;
+    font-size: 3em;
+    color: #bebebe;
     line-height: 1.5em;
     margin: 0 10px;
     }
@@ -726,7 +728,7 @@ side-dock-ribbon-tab-inner is-after-active {
 {
   font-family: var(--font-family-editor);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bold;
   line-height: 30px;
   color: var(--text-title-h4);
@@ -869,7 +871,7 @@ but font weight does. */
 {
   font-family: var(--font-family-preview);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bold;
   line-height: 28px;
   color: var(--text-title-h4);
@@ -1502,6 +1504,20 @@ mark.green{ --text-highlight-rgb: var(--fluro-green-rgb); }
   text-decoration: none;
   background-color: var(--background-secondary-alt);
   border-radius: 30px;
+  color: var(--text-a);
+  font-size: 0.9em;
+  padding: 2px 8px;
+  margin: 2px 4px;
+  line-height: 19px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+/*less rounded tag pills*/
+.frontmatter-container .tag, .frontmatter-container .frontmatter-alias {
+  text-decoration: none;
+  background-color: var(--background-secondary-alt);
+  border-radius: 8px;
   color: var(--text-a);
   font-size: 0.9em;
   padding: 2px 8px;
