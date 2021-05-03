@@ -1361,7 +1361,11 @@ color: var(--text-normal);
 
 
 
+
 /* CALIFORNIA COAST MODIFIED MODALS */
+
+
+
 
 .progress-bar-message {
   color: var(--text-faint);
@@ -1401,46 +1405,15 @@ color: var(--text-normal);
   width: 90vw;
 }
 
-input.prompt-input,
-input.prompt-input:hover {
-  border: 0;
-  background: var(--background-primary);
-  padding-left: 10px;
-  height: unset;
-  flex-grow: 0;
-  flex-shrink: 0;
-}
-.modal-container .suggestion-item.is-selected {
-  border-radius: var(--radius-m);
-  background: var(--background-tertiary);
-}
-.suggestion-item.is-selected,
-.menu-item:hover {
-  background-color: var(--shade-plus-darker);
-}
-.suggestion-item,
-.suggestion-empty {
-  font-size: var(--font-normal);
-}
 .modal,
 .prompt,
 .suggestion-container {
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
 }
-.suggestion-container {
-  border: none;
-}
+
 .prompt-instructions {
-  color: var(--text-muted);
+  color: var(--text-title-h6);
 }
-.prompt-instruction-command {
-  font-weight: 600;
-}
-
-
-
-
-
 
 
 
@@ -1449,6 +1422,8 @@ input.prompt-input:hover {
 
 
  /* CALIFORNIA COAST MODIFIED SETTINGS  */
+
+
 
 
 .modal-close-button:before {
@@ -1509,6 +1484,8 @@ input.prompt-input:hover {
 .setting-hotkey.mod-empty {
   background: transparent;
 }
+
+
 
 /*    Settings Popup   */
 /*                    */
