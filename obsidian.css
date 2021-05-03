@@ -1,3 +1,5 @@
+/* MODIFIED 2021-05-02 */
+
 .theme-dark
 {
   --background-primary: #2f3136;
@@ -1424,9 +1426,7 @@ color: var(--text-normal);
  /* CALIFORNIA COAST MODIFIED SETTINGS  */
 
 
-
-
-.modal-close-button:before {
+ .modal-close-button:before {
   font-weight: 200;
 }
 
@@ -1449,6 +1449,7 @@ color: var(--text-normal);
   background: var(--background-secondary-alt);
 }
 
+
 .vertical-tab-nav-item {
   font-size: 15px;
   padding: 7px 6px;
@@ -1461,11 +1462,12 @@ color: var(--text-normal);
 
 
 .vertical-tab-nav-item:hover {
-  background: var(--background-secondary;
+  background: var(--background-secondary);
 }
+
 .vertical-tab-nav-item.is-active {
   color: var(--text-normal);
-  background: var(--shade-plus-darker);
+  background: var(--background-secondary);
 }
 
 .hotkey-list-container,
@@ -1484,6 +1486,8 @@ color: var(--text-normal);
 .setting-hotkey.mod-empty {
   background: transparent;
 }
+
+
 
 
 
@@ -1635,6 +1639,10 @@ mark.green{ --text-highlight-rgb: var(--fluro-green-rgb); }
 .nav-action-button.is-active {
   background-color: var(--background-primary);
   color: var(--text-normal);
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .nav-action-button.is-active:hover {
@@ -1668,4 +1676,9 @@ mark.green{ --text-highlight-rgb: var(--fluro-green-rgb); }
   line-height: 19px;
   border: 1px solid transparent;
   white-space: nowrap;
+}
+
+/*  EMOJI INLINE FIX   */
+img.emoji {
+  display: inline-block;
 }
