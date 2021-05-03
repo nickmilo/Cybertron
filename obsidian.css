@@ -1359,7 +1359,161 @@ color: var(--text-normal);
   color: rgb(252, 246, 1, 0.75);
 }
 
-/* Settings Popup */
+
+
+/* CALIFORNIA COAST MODIFIED MODALS */
+
+.progress-bar-message {
+  color: var(--text-faint);
+}
+.modal.mod-sync-history {
+  background-color: var(--shade-0);
+}
+.modal {
+  border-top: 1px solid #8272d0;
+  border-bottom: 1px solid #8272d0;
+  background: var(--background-primary);
+  border-radius: 0px;
+  max-width: 1000px;
+  max-height: 90vh;
+}
+.modal.mod-settings .vertical-tab-content-container {
+  border-left: var(--border-width) solid var(--background-modifier-border);
+  padding-bottom: 0;
+  padding-right: 0;
+}
+.modal.mod-settings {
+  max-width: 1000px;
+  width: 900vw;
+  height: 90vh;
+}
+
+.modal.mod-settings .vertical-tab-header {
+  height: 90vh;
+}
+
+.modal.mod-settings .vertical-tab-content-container {
+  height: 90vh;
+}
+
+.modal.mod-community-theme,
+.modal.mod-community-plugin {
+  width: 90vw;
+}
+
+input.prompt-input,
+input.prompt-input:hover {
+  border: 0;
+  background: var(--background-primary);
+  padding-left: 10px;
+  height: unset;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.modal-container .suggestion-item.is-selected {
+  border-radius: var(--radius-m);
+  background: var(--background-tertiary);
+}
+.suggestion-item.is-selected,
+.menu-item:hover {
+  background-color: var(--shade-plus-darker);
+}
+.suggestion-item,
+.suggestion-empty {
+  font-size: var(--font-normal);
+}
+.modal,
+.prompt,
+.suggestion-container {
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+}
+.suggestion-container {
+  border: none;
+}
+.prompt-instructions {
+  color: var(--text-muted);
+}
+.prompt-instruction-command {
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ /* CALIFORNIA COAST MODIFIED SETTINGS  */
+
+
+.modal-close-button:before {
+  font-weight: 200;
+}
+
+.horizontal-tab-content,
+.vertical-tab-content {
+  background: var(--background-primary);
+}
+
+.modal.mod-settings .vertical-tab-header {
+  background: var(--background-secondary-alt);
+  padding-top: 0px;
+}
+
+.vertical-tab-header-group-title {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+  padding: 6px 18px;
+  background: var(--background-secondary-alt);
+}
+
+.vertical-tab-nav-item {
+  font-size: 15px;
+  padding: 7px 6px;
+  line-height: 1;
+  cursor: var(--cursor);
+  color: var(--text-normal);
+  border-radius: var(--radius-s);
+  background: var(--background-secondary-alt);
+}
+
+
+.vertical-tab-nav-item:hover {
+  background: var(--background-secondary;
+}
+.vertical-tab-nav-item.is-active {
+  color: var(--text-normal);
+  background: var(--shade-plus-darker);
+}
+
+.hotkey-list-container,
+.hotkey-search-container {
+  padding-left: 2px;
+}
+.setting-hotkey {
+  background-color: var(--background-modifier-border);
+  padding: 4px 4px 4px 10px;
+  line-height: 18px;
+  min-height: 0;
+}
+.setting-add-hotkey-button, .setting-restore-hotkey-button {
+  color: var(--text-muted);
+}
+.setting-hotkey.mod-empty {
+  background: transparent;
+}
+
+/*    Settings Popup   */
+/*                    */
+
+
 button.mod-cta {
   background-color: var(--background-primary);
   color: var(--text-on-accent);
@@ -1411,6 +1565,10 @@ button.mod-warning:hover {
   background-color: var(--background-modifier-error);
   color: #ff7575;
 }
+
+
+
+
 
 /* Death-au Realistic Highlighting*/
 body{
