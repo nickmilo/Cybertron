@@ -1622,20 +1622,9 @@ mark.green{ --text-highlight-rgb: var(--fluro-green-rgb); }
 /* This is to hide queries in Preview Mode. Thanks Kassapa!*/
 .markdown-preview-view .internal-query.is-embed .internal-query-header{ display:none; }
 
-/* Active buttons */
-.workspace-leaf-content[data-type='search'] 
-.nav-action-button.is-active {
-  background-color: var(--background-primary);
-  color: var(--text-normal);
-}
 
-.workspace-leaf-content[data-type='backlink'] 
-.nav-action-button.is-active {
-    background-color: var(--background-primary);
-    color: var(--text-normal);
-}
+/*TAG PANE selected button thing
 
-/*TAG PANE selected button thing*/
 .nav-action-button.is-active {
   background-color: var(--background-primary);
   color: var(--text-normal);
@@ -1681,4 +1670,25 @@ mark.green{ --text-highlight-rgb: var(--fluro-green-rgb); }
 /*  EMOJI INLINE FIX   */
 img.emoji {
   display: inline-block;
+}
+
+
+/* Active buttons */
+/*
+.workspace-leaf-content[data-type='search'] 
+.nav-action-button.is-active {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.workspace-leaf-content[data-type='backlink'] 
+.nav-action-button.is-active {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+*/
+
+.nav-action-button.is-active {
+  background-color: transparent;
+  color: var(--text-on-accent);
 }
