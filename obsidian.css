@@ -13,9 +13,9 @@
   --text-title-h1: rgba(252, 246, 1, 0.75);
   --text-title-h2: #b9adff; 
   --text-title-h3: #52c1da;
-  --text-title-h4: rgba(252, 246, 1, 0.65);
-  --text-title-h5: #cccccc; /*d8d8d8*/
-  --text-title-h6: #afafaf;
+  --text-title-h4: #cf6f6f; /*6fcf7f*/
+  --text-title-h5: #67c073; /*d8d8d8*/
+  --text-title-h6: #b4b4b4;
   --text-link: #99ff99;
   --text-a: #d669bc;
   --text-a-hover: #b3a14b;
@@ -172,22 +172,25 @@ padding: 5px 30px;
 
 
 /***************************************/
-/*             Blockquote         1a1b24      */
+/*          Blockquote                */
 /***************************************/
-
 /* for preview */
 .markdown-preview-view blockquote {
-    background-color: #1a1b24;
+    background-color: #222229;
     border: 0px solid;
-    border-color: rgb(252, 246, 1, 0.70) !important;
+    border-color: #8272d0 !important;
     border-left-width: 2px !important;
     border-radius: 0 0px 0px 0;
     /* font-family: merriwether, georgia, serif; */
-    font-family:georgia;
-    font-size: 3em;
-    color: #bebebe;
+    font-family: var(--font-family-preview);
+    font-size: 0.95em;
+    color: #5dbcd2;
     line-height: 1.5em;
-    margin: 0 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+/* background alt: 1a1b24  vertical line alt: rgb(252, 246, 1, 0.70) */
     }
 
 
@@ -811,6 +814,10 @@ but font weight does. */
 
 /* PREVIEW - normal text (outside of headings and code) */
 
+p {
+  margin-block-start: 0px;
+}
+
 
 .markdown-preview-view
 {
@@ -894,6 +901,7 @@ but font weight does. */
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
+  margin-bottom: 3px;
   color: var(--text-title-h6);
   
 }
@@ -1128,7 +1136,7 @@ color: #38dc7f !important;
 }
 .markdown-embed .markdown-preview-section:last-child p,
 .markdown-embed .markdown-preview-section:last-child ul {
-  margin-block-end:2px;
+  margin-block-end:15px;
 }
 .markdown-embed-link,
 .file-embed-link {
@@ -1164,7 +1172,7 @@ color: #38dc7f !important;
     transform: translate3d(0px, -3px, 0px);
 }
 br + .internal-embed {
-    margin-top: -1.75rem;
+    margin-top: 1rem;
 }
 .markdown-embed-title ~ .markdown-embed-link,
 .internal-embed[src*="#"] .markdown-embed-link {
