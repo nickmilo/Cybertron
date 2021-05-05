@@ -167,12 +167,8 @@ padding: 5px 30px;
   color: var(--text-title-h2);
 }
 
-.setting-item {
-  padding: 0 0 0 0; 
-}
-
-.setting-item {
-  padding: 0 0 0 0; 
+.mod-settings .setting-item {
+  padding: 0;
 }
 
 .setting-item-name {
