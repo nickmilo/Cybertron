@@ -1264,7 +1264,7 @@ li .internal-embed .markdown-embed {
 ul ul { position: relative; }
 ul ul::before {
   content:'';
-  border-left: 1px solid #2c8ba0;
+  border-left: 0px solid #2c8ba0;
   position: absolute;
 }
 ul ul::before { left: -1em; top: 0; bottom: 0; }
@@ -1272,6 +1272,20 @@ ul ul::before { left: -1em; top: 0; bottom: 0; }
 /* rule line when there are checkboxes*/
 ul .task-list-item ul::before {left: -1.03em !important}
 
+
+li::marker {
+  color: var(--text-title-h2);
+}
+
+.markdown-preview-view li .collapse-indicator {
+  display: flex;
+  margin-top: 6px;
+}
+
+.markdown-preview-view .collapse-indicator {
+  display: flex;
+  margin-top: .5em;
+}
 
 /***************************************/
 /*    Tiny Tweaks now that Nick knows a smidgen more */
@@ -1709,4 +1723,3 @@ img.emoji {
   line-height: 18px; /* this works, which is good enough */
 }
 */
-
