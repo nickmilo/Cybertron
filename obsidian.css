@@ -20,7 +20,7 @@
   --text-title-h6: #b4b4b4;
   --text-link: #99ff99;
   --text-a: #d669bc;
-  --text-a-hover: #b3a14b;
+  --text-a-hover: #ec9ad9; /*previous: b3a14b */
   --text-mark: rgb(252, 246, 1, 0.45); /* SEE HIGHLIGHTER */
   --pre-code: #40444d;
   --text-highlight-bg: rgba(252, 246, 1, 0.4); /* SEE HIGHLIGHTER */
