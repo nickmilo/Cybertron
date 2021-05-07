@@ -12,11 +12,11 @@
   --text-selection: #164f92;
   --text-on-accent: #5dbcd2;
   --text-accent: #319cb4;
-  --text-title-h1: rgba(252, 246, 1, 0.75);
+  --text-title-h1: #c7c400; /* CyberYellow: fcf601, FullYellow: fffb00, H1Yellow: c7c400 */
   --text-title-h2: #b9adff; 
   --text-title-h3: #52c1da;
-  --text-title-h4: #cf6f6f; /*6fcf7f*/
-  --text-title-h5: #67c073; /*d8d8d8*/
+  --text-title-h4: #67c073; /*6fcf7f*/
+  --text-title-h5: #de87ca; /*d8d8d8*/
   --text-title-h6: #b4b4b4;
   --text-link: #99ff99;
   --text-a: #d669bc;
@@ -100,13 +100,13 @@
 
 
 strong {
-  color: #b399fff2;
-  font-weight: 700;
+  color: #9e8aff;
+  font-weight: 700; /*previous bold purple: b399fff2 ; alt: red cf6f6f ; alt: yellow bdba2d*/
 }
 
 
 em {
-  color: #b8b894;
+  color: #bac04f; /*previous italic vegas gold: b8b894 ; alt: red ; alt: orange d6b456*/
 }
 
 
