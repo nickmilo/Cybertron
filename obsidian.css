@@ -1415,7 +1415,7 @@ color: var(--text-normal);
 }
 .modal.mod-settings {
   max-width: 1000px;
-  width: 100vw;
+  width: 90vw;
   height: 90vh;
 }
 
