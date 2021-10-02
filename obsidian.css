@@ -1,4 +1,4 @@
-/* MODIFIED 2021-05-05 */
+/* MODIFIED 2021-10-01 */
 
 .theme-dark
 {
@@ -592,8 +592,8 @@ side-dock-ribbon-tab-inner is-after-active {
     background-color: #1a1a1a;
 }
 
-.nav-file-tag{ color: var(--text-normal); } for the PNG text, but can't specifically target "PNG", just all of those filetype tags.
-.nav-file.is-active .nav-file-tag { var(--text-normal); }
+.nav-file-tag{ color: var(--text-normal); }  /* for the PNG text, but can't specifically target "PNG", just all of those filetype tags. */
+.nav-file.is-active .nav-file-tag { color: var(--text-normal); }
 
 
 
@@ -938,7 +938,7 @@ code
 .code {
     background-color: var(--grey) !important;
     border: 1px solid var(--background-modifier-border) !important;
-    border-color: #ba6ea0; !important;
+    border-color: #ba6ea0!important;
 }
 
 
@@ -1339,7 +1339,7 @@ color: var(--text-normal);
 ::-webkit-scrollbar {
   width: 9px;
   height: 8px;
-  -webkit-border-radius: 0px;
+  border-radius: 0px;
 }
 
 ::-webkit-scrollbar {
@@ -1349,7 +1349,7 @@ color: var(--text-normal);
   background: transparent;
 }
 ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:active {
-  -webkit-border-radius: 2px;
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1722,4 +1722,3 @@ img.emoji {
   font-size: 16px; /* doesn't work */
   line-height: 18px; /* this works, which is good enough */
 }
-*/
