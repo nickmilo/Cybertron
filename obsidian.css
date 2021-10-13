@@ -21,7 +21,7 @@
   --text-link: #99ff99;
   --text-a: #d669bc;
   --text-a-hover: #ec9ad9; /*previous: b3a14b */
-  --text-mark: rgb(252, 246, 1, 0.45); /* SEE HIGHLIGHTER */
+  --text-mark: transparent; /* SEE HIGHLIGHTER */
   --pre-code: #40444d;
   --text-highlight-bg: rgba(252, 246, 1, 0.4); /* SEE HIGHLIGHTER */
   --interactive-accent: rgb(252, 246, 1, 0.95);
@@ -118,24 +118,25 @@ em {
 mark
 {
   background-color: var(--text-mark) !important;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 
 .cm-s-obsidian span.cm-highlight {
-    color: #0c0c0e;
+    color: #6CE4FF;
     font-weight: 500;
-    background-color: rgb(252, 246, 1, 0.49);
+    background-color: transparent;
+    text-shadow: 0 0 0.6em #FCF60159;
 }
 
 .markdown-preview-view mark {
-    color: #0c0c0e;
+    color: #6CE4FF;
     font-weight: 500;
+    text-shadow: 0 0 0.6em #FCF60159;
     }
-
 
 
 /*settings pop-up*/
@@ -771,7 +772,7 @@ side-dock-ribbon-tab-inner is-after-active {
 }
 
 .cm-strong {
-  color: rgb(179, 153, 255, 0.95);
+  color: #9e8aff;
   font-weight: 700;
 }
 
@@ -1572,74 +1573,6 @@ button.mod-warning:hover {
 
 
 
-
-/* Death-au Realistic Highlighting*/
-body{
-  --fluro-yellow-rgb: 255, 255, 0;
-  --fluro-pink-rgb: 255, 0, 255;
-  --fluro-blue-rgb: 0, 255, 255;
-  --fluro-green-rgb: 0, 255, 0;
-  --text-highlight-rgb: var(--fluro-yellow-rgb);
-}
-
-mark.yellow{ --text-highlight-rgb: var(--fluro-yellow-rgb); }
-mark.pink{ --text-highlight-rgb: var(--fluro-pink-rgb); }
-mark.blue{ --text-highlight-rgb: var(--fluro-blue-rgb); }
-mark.green{ --text-highlight-rgb: var(--fluro-green-rgb); }
-
-.markdown-preview-view mark {
-  margin: 0 -0.4em;
-  padding: 0.1em 0.4em;
-  border-radius: 0.8em 0.3em;
-  background: transparent;
-  background-image: linear-gradient(105deg,
-    transparent 0,
-    transparent 0.3em,
-    rgba(var(--text-highlight-rgb), 0.7) 0.5em,
-    rgba(var(--text-highlight-rgb), 0.4) 1.6em,
-    rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em),
-    rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em),
-    transparent calc(100% - 0.3em),
-    transparent 100%);
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  text-shadow: 0 0 0.75em var(--background-primary-alt);
-}
-
-.cm-s-obsidian span.cm-highlight {
-  padding:0.1em 0;
-  background: rgba(var(--text-highlight-rgb), 0.4);
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  text-shadow: 0 0 0.75em var(--background-primary-alt);
-}
-
-.cm-s-obsidian span.cm-formatting-highlight{
-  margin: 0 0 0 -0.4em;
-  padding: 0.1em 0 0.1em 0.4em;
-  border-radius: 0.8em 0 0 0.4em;
-  background: none;
-  background-image: linear-gradient(105deg,
-    transparent 0,
-    transparent 0.3em,
-    rgba(var(--text-highlight-rgb), 0.7) 0.5em,
-    rgba(var(--text-highlight-rgb), 0.4) 1.6em);
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-.cm-s-obsidian .cm-highlight+span.cm-formatting-highlight {
-  margin: 0 -0.4em 0 0;
-  padding: 0.1em 0.4em 0.1em 0;
-  border-radius: 0 0.4em 0.8em 0;
-  background: none;
-  background-image: linear-gradient(105deg,
-    rgba(var(--text-highlight-rgb), 0.4) calc(100% - 1.4em),
-    rgba(var(--text-highlight-rgb), 0.7) calc(100% - 0.5em),
-    transparent calc(100% - 0.3em),
-    transparent 100%);
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
 
 /* This is to hide queries in Preview Mode. Thanks Kassapa!*/
 .markdown-preview-view .internal-query.is-embed .internal-query-header{ display:none; }
