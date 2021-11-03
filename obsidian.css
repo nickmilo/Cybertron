@@ -243,6 +243,11 @@ a:not(.internal-link) {
   color: var(--text-normal) !important;
 }
 
+.cm-formatting.cm-formatting-quote.cm-formatting-quote-1.cm-quote.cm-quote-1
+{
+  color: #9e8aff !important;
+}
+
 blockquote /* for preview */
 {
   border-color: var(--blockquote-border) !important;
