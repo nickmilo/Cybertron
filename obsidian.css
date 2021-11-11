@@ -248,6 +248,7 @@ a:not(.internal-link) {
   color: #9e8aff !important;
 }
 
+
 blockquote /* for preview */
 {
   border-color: var(--blockquote-border) !important;
@@ -816,7 +817,9 @@ but font weight does. */
 }
 
 
-
+.cm-s-obsidian span.cm-formatting-list {
+  color: #b9adff !important;
+}
 
 
 
@@ -2656,3 +2659,43 @@ body.is-mobile:not(.minimal-icons-off) .menu-item-icon svg {
     border-radius:15px;
   }
 }
+
+
+
+
+/**********************/
+/* HIGHLIGHTER UPDATES */
+/**********************/
+
+mark
+{
+  background-color: var(--text-mark) !important;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+.markdown-preview-view mark {
+    color: #6CE4FF;
+    font-weight: 500;
+    text-shadow: 0 0 0.6em #FCF60159;
+    }
+
+
+.cm-s-obsidian span.cm-highlight {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 0.1rem;
+  background-image: linear-gradient(60deg, #86c3ff 0%, #ddb9ff 100%) !important;
+  text-shadow: 0 0 0.6em #fcf80118;
+}
+
+.markdown-preview-view mark {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 0.1rem;
+  background-image: linear-gradient(60deg, #86c3ff 0%, #ddb9ff 100%) !important;
+  text-shadow: 0 0 0.6em #fcf80118;
+  }
