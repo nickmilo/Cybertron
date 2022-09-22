@@ -1,3 +1,5 @@
+NOTE: I have stopped updating Cybertron, but you can help. Send pull requests and I'll review and approve.
+
 # Cybertron
 A revised retro theme for Obsidian inspired by Cyberpunk 2077, Dynalist, Tron, The Terminator, Synthwave, and Keanu Reeves
 
