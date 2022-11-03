@@ -1,7 +1,7 @@
-/* MODIFIED 2021-10-01 */
+/* MODIFIED 2022-11-01 */
 
-.theme-dark
-{
+.theme-dark {
+  color-scheme: dark;
   --background-primary: #2f3136;
   --background-primary-alt: #36393f;
   --background-secondary: #141414;
@@ -12,111 +12,87 @@
   --text-selection: #164f92;
   --text-on-accent: #5dbcd2;
   --text-accent: #319cb4;
-  --text-title-h1: #c7c400; /* CyberYellow: fcf601, FullYellow: fffb00, H1Yellow: c7c400 */
-  --text-title-h2: #b9adff; 
-  --text-title-h3: #52c1da;
-  --text-title-h4: #67c073; /*6fcf7f*/
-  --text-title-h5: #de87ca; /*d8d8d8*/
-  --text-title-h6: #b4b4b4;
-  --text-link: #99ff99;
-  --text-a: #d669bc;
-  --text-a-hover: #ec9ad9; /*previous: b3a14b */
+  --text-error: rgb(244, 105, 188);
+  --bold-color: rgb(158, 138, 255);
+  --bold-weight: 700;
+  --italic-color: rgb(186, 192, 79);
+  --h1-color: #c7c400; /* CyberYellow: fcf601, FullYellow: fffb00, H1Yellow: c7c400 */
+  --h2-color: #b9adff;
+  --h3-color: #52c1da;
+  --h4-color: #67c073; /*6fcf7f*/
+  --h5-color: #de87ca; /*d8d8d8*/
+  --h6-color: #b4b4b4;
+  --inline-title-color: rgb(93, 188, 210);
+  --link-color: rgb(214, 105, 188);
+  --link-external-color: rgb(214, 105, 188);
+  --link-external-color-hover: rgb(236, 154, 217);
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: underline;
   --text-mark: transparent; /* SEE HIGHLIGHTER */
-  --pre-code: #40444d;
+  /* pre-code referenced in cm-inline-code */
+  --pre-code: rgb(64, 68, 77);
+  --code-size: 13.125px;
+  --code-background: rgb(54, 57, 63);
+  --code-normal: rgb(170, 170, 170);
+  --code-tag: rgb(49, 156, 180);
+  --code-punctuation: rgb(49, 156, 180);
   --text-highlight-bg: rgba(252, 246, 1, 0.4); /* SEE HIGHLIGHTER */
-  --interactive-accent: rgb(252, 246, 1, 0.95);
-  --interactive-accent-muted: rgb(252, 246, 1, 0.55);
+  --interactive-accent: rgba(252, 246, 1, 0.95);
+  --interactive-accent-muted: rgba(252, 246, 1, 0.55);
   --interactive-accent-hover: #9e8aff; /* for Calendar Plugin*/
   --interactive-before: #5e6565;
   --interactive-hover: #36393f; /* for Calendar Plugin*/
   --background-modifier-border: #595959; /*595959*/
-  --blockquote-border: #9e8aff;
-  --interactive-accent-rgb: #fe8019;
-  --font-family-editor: Avenir, Avenir Next, var(--default-font), sans-serif;
-  --font-family-preview: Avenir, Avenir Next, var(--default-font), sans-serif;
-  --scrollbar-bg: rgb(20, 20, 20, 0.0);
+  /* Matching blockquote border to screenshot rather than code */
+  --blockquote-border-color: rgb(130, 114, 208);
+  --blockquote-border-thickness: 2px;
+  --blockquote-color: rgb(93, 188, 210);
+  --interactive-accent: #fe8019;
+  --font-text-theme: Avenir, Avenir Next, var(--default-font), sans-serif;
+  --font-editor-theme: Avenir, Avenir Next, var(--default-font), sans-serif;
+  /* Usage of preferred monospace font */
+  /* --font-monospace-theme: Menlo, SFMono-Regular, Consolas, "JetBrains Mono",
+    "Fira Coda", SFMono-Regular, "Roboto Mono", "Source Code Pro", monospace; */
+  --font-monospace-theme: "JetBrains Mono", Menlo, SFMono-Regular, Consolas,
+    "Fira Coda", SFMono-Regular, "Roboto Mono", "Source Code Pro", monospace;
+  --scrollbar-bg: rgba(20, 20, 20, 0);
   --scrollbar-thumb-bg: #595959;
   --background-modifier-error: #36393f;
   --background-modifier-success: #36393f;
   --background-modifier-form-field: #2f3136;
   --background-modifier-form-field-highlighted: #2f3136;
-}
-#graph-view-canvas .links
-{
-  stroke: var(--interactive-accent-rgb) !important;
-}
-
-/**********************/
-/* NEW SUPER GRAPH WITH FILTER */
-/**********************/
-
-.theme-dark .graph-view.color-fill-tag {
-  color: #5dbcd2;
-}
-
-.theme-dark .graph-view.color-fill-attachment {
-  color: #d669bc;
-}
-
-.theme-dark .graph-view.color-fill-unresolved {
-  color: #9e8aff;
-  Opacity:1;
-}
-
-.theme-dark .graph-view.color-arrow {
-  color: #d669bc;
+  --graph-text: rgb(204, 204, 204);
+  --graph-node: rgb(252, 246, 1);
+  --graph-node-focused: rgb(38, 121, 140);
+  --graph-node-unresolved: rgb(158, 138, 255);
+  --graph-node-attachment: rgb(214, 105, 188);
+  --graph-node-tag: rgb(93, 188, 210);
+  --graph-line: rgb(38, 121, 140);
+  --table-background: var(--background-secondary-alt);
+  --table-header-weight: 800;
+  --hr-color: var(--text-normal);
+  --ribbon-background: rgb(20, 20, 20);
+  --ribbon-background-collapsed: rgb(20, 20, 20);
+  --tag-color: rgb(252, 246, 1);
 }
 
 /**********************/
 /* Graph View */
 /**********************/
-
-.graph-view.color-fill {
-    color: #fcf601;
-}
-.graph-view.color-circle {
-    color: #26798c;
-}
-.graph-view.color-line {
-    color:  #26798c;
+/* Graph arrow coloring */
+.theme-dark .graph-view.color-arrow {
+  color: #d669bc;
 }
 
-.graph-view.color-text {
-    color: #cccccc;
-}
-
-.graph-view.color-fill-highlight {
-    color: #26798c;
-}
+/* Graph line highlighting */
 .graph-view.color-line-highlight {
-    color: #5dbcd2;
+  color: #5dbcd2;
 }
-
-
-
-/**********************/
-/* BOLD AND ITALTICS */
-/**********************/
-
-
-strong {
-  color: #9e8aff;
-  font-weight: 700; /*previous bold purple: b399fff2 ; alt: red cf6f6f ; alt: yellow bdba2d*/
-}
-
-
-em {
-  color: #bac04f; /*previous italic vegas gold: b8b894 ; alt: red ; alt: orange d6b456*/
-}
-
 
 /**********************/
 /* HIGHLIGHTER */
 /**********************/
-
-
-mark
-{
+mark {
   background-color: var(--text-mark) !important;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -124,23 +100,28 @@ mark
   padding-right: 0px;
 }
 
-
 .cm-s-obsidian span.cm-highlight {
-    color: #6CE4FF;
-    font-weight: 500;
-    background-color: transparent;
-    text-shadow: 0 0 0.6em #FCF60159;
+  color: #6ce4ff;
+  font-weight: 500;
+  background-color: transparent;
+  text-shadow: 0 0 0.6em #fcf60159;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 0.1rem;
+  background-image: linear-gradient(60deg, #86c3ff 0%, #ddb9ff 100%) !important;
 }
 
 .markdown-preview-view mark {
-    color: #6CE4FF;
-    font-weight: 500;
-    text-shadow: 0 0 0.6em #FCF60159;
-    }
-
+  color: #6ce4ff;
+  font-weight: 500;
+  text-shadow: 0 0 0.6em #fcf60159;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 0.1rem;
+  background-image: linear-gradient(60deg, #86c3ff 0%, #ddb9ff 100%) !important;
+}
 
 /*settings pop-up*/
-
 .modal-bg {
   position: fixed;
   top: 0;
@@ -149,6 +130,7 @@ mark
   height: 100%;
   background-color: rgba(252, 246, 1, 0.1);
 }
+
 .modal {
   background-color: var(--background-primary);
   border-radius: 4px;
@@ -157,11 +139,11 @@ mark
   padding: 30px 50px;
   position: relative;
   min-width: 560px;
-  }
+}
 
 .vertical-tab-content {
-background-color: var(--background-primary);
-padding: 5px 30px;
+  background-color: var(--background-primary);
+  padding: 5px 30px;
 }
 
 .u-pop {
@@ -176,148 +158,40 @@ padding: 5px 30px;
   color: #b9adff;
 }
 
-
-/**********************/
-/* links and brackets */
-/**********************/
-.cm-s-obsidian span.cm-formatting-link {
-    color: #d669bc !important;
-}
-
-
-/***************************************/
-/*          Blockquote                */
-/***************************************/
-/* for preview */
-.markdown-preview-view blockquote {
-    background-color: #222229;
-    border: 0px solid;
-    border-color: #8272d0 !important;
-    border-left-width: 2px !important;
-    border-radius: 0 0px 0px 0;
-    /* font-family: merriwether, georgia, serif; */
-    font-family: var(--font-family-preview);
-    font-size: 0.95em;
-    color: #5dbcd2;
-    line-height: 1.5em;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-/* background alt: 1a1b24  vertical line alt: rgb(252, 246, 1, 0.70) */
-    }
-
-
-/***************************************/
-/* link */
-/***************************************/
-
-
-a,
-.internal-link,
-.cm-hmd-internal-link,
-.cm-link,
-.cm-formatting-link
-{
-  color: var(--text-a) !important;
-  text-decoration: none !important;
-  font-family: var(--font-family-preview) !important;
-}
-
-/* link hover color */
-a:hover,
-.internal-link:hover
-{
-  color: var(--text-a-hover) !important;
-  text-decoration: none !important;
-}
-
-/* make external links italics to differentiate */
-a:not(.internal-link) {
-  font-style: italic;
-}
-
-/* blockquote */
-.cm-quote /* for editor */
-{
-  color: var(--text-normal) !important;
-}
-
-.cm-formatting.cm-formatting-quote.cm-formatting-quote-1.cm-quote.cm-quote-1
-{
-  color: #9e8aff !important;
-}
-
-
-blockquote /* for preview */
-{
-  border-color: var(--blockquote-border) !important;
-}
-
 /* icons at top of panes*/
-.file-view-actions a
-{
+.file-view-actions a {
   color: var(--text-muted) !important;
 }
 
-.file-view-actions a:hover
-{
-  color: var(--text-a) !important;
+.file-view-actions a:hover {
+  color: var(--link-color) !important;
 }
 
-/* html tags in editor */
-.cm-tag
-{
-  color: var(--text-accent) !important;
-}
-
-/* code blocks in preview */
-pre code
-{
-  padding: 6px !important;
-  line-height: normal;
-  display: block;
-  background-color: var(--pre-code) !important;
-}
-
-.markdown-preview-view pre
-{
-  padding: 0px !important;
+.clickable-icon.view-action {
+  color: var(--link-color);
 }
 
 /* in-line code for editor and preview and code block for editor*/
 code,
-.cm-inline-code
-{
+.cm-inline-code {
   background-color: var(--pre-code) !important;
   color: var(--text-muted) !important;
   bottom: 0px !important;
 }
 
-/* code and code blocks for preview */
-.markdown-preview-view code
-{
-  font-size: 13.5px;
+/* Code block error coloring */
+.cm-s-obsidian span.cm-error {
+  color: var(--text-error);
 }
-
 
 /**********/
 /* tables */
 /**********/
-
-
-th
-{
-  font-weight: 800 !important;
-}
-
-thead
-{
+thead {
   border-bottom: 4px solid var(--background-modifier-border);
 }
 
-.table
-{
+.table {
   background-color: var(--background-secondary-alt);
   border: 1px solid var(--background-modifier-border);
   padding: 4px;
@@ -330,301 +204,205 @@ thead
 }
 
 /* embedded images */
-img
-{
+img {
   display: block;
 }
-
-/* horizontal line in preview */
-.markdown-preview-view hr
-{
-  background-color: var(--text-normal);
-}
-
 
 /***************************************/
 /*             Presentation Mode              */
 /***************************************/
-
-
 .reveal h1 {
-    color: var(--text-title-h1);
+  color: var(--text-title-h1);
 }
 
 .reveal h2 {
-    color: var(--text-title-h2);
+  color: var(--text-title-h2);
 }
 
 .reveal h3 {
-    color: var(--text-title-h3);
+  color: var(--text-title-h3);
 }
 
 .reveal h4 {
-    color: var(--text-title-h4);
+  color: var(--text-title-h4);
 }
 
 .reveal h5 {
-    color: var(--text-title-h5);
+  color: var(--text-title-h5);
 }
 
 .reveal h6 {
-    color: var(--text-title-h6);
+  color: var(--text-title-h6);
 }
-
 
 /*************/
 /* checkboxes */
 /*************/
-
-
 /* Death-au */
 /* 3.9.3. Task lists! (I'm proud of this, but could use improvement) */
 .markdown-preview-view .task-list-item-checkbox {
-    -webkit-appearance: none;
-    top: 1.8px !important;
-    box-sizing: border-box;
-    border: 1px solid  #888888;
-    position: relative;
-    width: 1em;
-    height: 1em;
-    margin: 0;
-    margin-right: .7em;
+  -webkit-appearance: none;
+  top: 1.8px !important;
+  box-sizing: border-box;
+  border: 1px solid #888888;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  margin: 0;
+  margin-right: 0.7em;
 }
-
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-    content: '✓';
-    position: absolute;
-    color: #999999;
-    font-size: 1em;
-    line-height: 1em;
-    width:1em;
-    text-align:center;
-    text-shadow: 0 0 0.1em #8d8d8d;
+  content: "✓";
+  position: absolute;
+  color: #999999;
+  font-size: 1em;
+  line-height: 1em;
+  width: 1em;
+  text-align: center;
+  text-shadow: 0 0 0.1em #8d8d8d;
 }
 
-
-.markdown-preview-view .task-list-item-checkbox
-{
+.markdown-preview-view .task-list-item-checkbox {
   top: 0px;
 }
 
-
 .checkbox-container {
-    background-color: #9196a1;
-    border-radius: 14px;
-    display: inline-block;
-    height: 22px;
-    position: relative;
-    top: 4px;
-    user-select: none;
-    width: 42px;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
-    transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border 0.15s ease-in-out, opacity 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  background-color: #9196a1;
+  border-radius: 14px;
+  display: inline-block;
+  height: 22px;
+  position: relative;
+  top: 4px;
+  user-select: none;
+  width: 42px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
+  transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    border 0.15s ease-in-out, opacity 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .checkbox-container.is-enabled {
-    background-color: #5dbcd2;
+  background-color: #5dbcd2;
 }
 
-
 .list-item-ending-flair {
-    position: absolute;
-    top: 7px;
-    right: 10px;
-    font-size: 12px;
-    color: var(--text-accent);
-    background-color: var(--background-secondary-alt);
-    line-height: 12px;
-    border-radius: 3px;
-    padding: 2px 4px;
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  font-size: 12px;
+  color: var(--text-accent);
+  background-color: var(--background-secondary-alt);
+  line-height: 12px;
+  border-radius: 3px;
+  padding: 2px 4px;
 }
 
 .list-item:hover .list-item-ending-flair {
-    color: var(--text-accent);
-    background-color: var(--background-secondary-alt);
+  color: var(--text-accent);
+  background-color: var(--background-secondary-alt);
 }
-
 
 button.mod-cta {
-    background-color: #5dbcd2;
-    color: #36393f;
+  background-color: #5dbcd2;
+  color: #36393f;
 }
-
 
 .cm-hmd-frontmatter {
-    font-size: 13px;
+  font-size: 13px;
 }
-
-
-
-
-/*************/
-/* LEFT side dock --------- RIBBON*/
-/*************/
-
-
-.side-dock-ribbon {
-  background-color: #141414;
-}
-
-.side-dock-ribbon-tab-inner {
-  background-color: #141414;
-}
-
-.side-dock-ribbon-action {
-  background-color: #141414;
-}
-
-
-/* LEFT side dock ----- RIBBON FAILED ATTEMPTS*/
-side-dock-ribbon-tab is-before-active {
-  color: #141414;
-  background-color: #141414;
-}
-side-dock-ribbon-before is-before-active {
-  color: #141414;
-  background-color: #141414;
-}
-side-dock-ribbon-tab-inner is-before-active {
-  color: #141414;
-  background-color: #141414;
-}
-side-dock-ribbon-tab-inner {
-  color: #141414;
-  background-color: #141414;
-}
-
-.side-dock-plugin-panel.mod-file-explorer,
-.side-dock-plugin-panel.mod-starred,
-.side-dock-ribbon-tab.is-after-active,
-.side-dock-ribbon-before.is-before-active,
-.side-dock-ribbon-after.is-before-active {
-   background-color: #141414;
-}
-
-
-
-
-side-dock-ribbon-tab-inner is-after-active {
-  background-color: #141414;
-}
-
-.side-dock-ribbon-tab.is-active {
-  color: #cccccc !important;
-}
-
-
-.side-dock-title {
-  background-color: #141414;
-  }
-
-.nav-buttons-container {
-  background-color: #141414;
-  }
-  
-.nav-header {
-  background-color: #141414;
-  }
 
 /*************/
 /* LEFT side dock --------- FILE EXPLORER*/
 /*************/
-
-
-.nav-folder-title {  
+.nav-folder-title {
   color: #cccccc;
   background-color: #141414;
   font-weight: 500;
   margin-top: 0px;
   margin-bottom: -2px;
-  }
-
-.nav-file-title {  
-  color: #999999;
-  background-color: #141414;
-  }
-  
-.nav-folder-children {
-    background-color: #141414;
 }
 
+.nav-file-title {
+  color: #999999;
+  background-color: #141414;
+}
+
+.nav-folder-children {
+  background-color: #141414;
+}
 
 /*************/
 /* RIGHT side dock SPECIAL STUFF*/
 /*************/
-
 /*Search result TEXT*/
-.search-result-file-matches{  
+.search-result-file-matches {
   color: #999999;
-  background-color: #141414;}
-  
+  background-color: #141414;
+}
+
 .search-result-file-match:hover {
-    color: #d669bc;
-    background-color: #141414;}
+  color: #d669bc;
+  background-color: #141414;
+}
 
 /*Search result TITLE*/
-.search-result-file-title {  
+.search-result-file-title {
   color: #5dbcd2;
-  background-color: #141414;}
-  
+  background-color: #141414;
+}
+
 .search-result-file-title:hover {
-	color: #d669bc;
-    background-color: #333333; /* filename hover*/}
-    
+  color: #d669bc;
+  background-color: #333333; /* filename hover*/
+}
+
 /*Search result MATCHED TEXT*/
-.search-result-file-matched-text {  
+.search-result-file-matched-text {
   color: #cccccc;
-  background-color: #141414;}
+  background-color: #141414;
+}
 
 /*Search result BACKGROUND*/
-.search-result-container {  
+.search-result-container {
   color: #999999;
-  background-color: #141414;}
-
+  background-color: #141414;
+}
 
 /*************/
 /* RIGHT side dock ******* RIBBON*/
 /*************/
-
-
 .side-dock-ribbon-tab.is-active .side-dock-ribbon-tab-inner:hover {
-    color: var(--text-normal) !important;
-    background-color: #1a1a1a;
+  color: var(--text-normal) !important;
+  background-color: #1a1a1a;
 }
 
-
 .side-dock-ribbon-tab.is-active .side-dock-ribbon-tab-inner:hover {
-    color: #d669bc !important;
-    background-color: #1a1a1a;
+  color: #d669bc !important;
+  background-color: #1a1a1a;
 }
 
-.nav-file-tag{ color: var(--text-normal); }  /* for the PNG text, but can't specifically target "PNG", just all of those filetype tags. */
-.nav-file.is-active .nav-file-tag { color: var(--text-normal); }
-
-
-
-
+.nav-file-tag {
+  color: var(--text-normal);
+} /* for the PNG text, but can't specifically target "PNG", just all of those filetype tags. */
+.nav-file.is-active .nav-file-tag {
+  color: var(--text-normal);
+}
 
 /* side dock text, like file names and backlink context */
-.side-dock-panels-container *
-{
+.side-dock-panels-container * {
   font-size: 13px !important;
 }
 
-.side-dock-plugin-panel-inner  {
-    
-    background-color: #1a1a1a;
+.side-dock-plugin-panel-inner {
+  background-color: #1a1a1a;
 }
 
 /* side dock titles at top */
-.side-dock-title
-{
+.side-dock-title {
   font-size: 20px !important;
   font-weight: 800 !important;
 }
-
-
 
 /* hover actions on side dock navigation */
 .side-dock-ribbon-tab:hover,
@@ -632,16 +410,14 @@ side-dock-ribbon-tab-inner is-after-active {
 .side-dock-ribbon-action:hover,
 .side-dock-ribbon-action.is-active:hover,
 .nav-action-button:hover,
-.side-dock-collapse-btn:hover
-{
+.side-dock-collapse-btn:hover {
   color: var(--text-a);
 }
 
 /* condense line spacing on file explorer title list. also avoids character-level word breaks */
 .nav-file-title-content,
 .search-result-file-title,
-.search-result-file-match
-{
+.search-result-file-match {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   line-height: normal !important;
@@ -650,55 +426,28 @@ side-dock-ribbon-tab-inner is-after-active {
 }
 
 /* clean up side bar empty state (e.g. unlinked mentions) */
-.search-empty-state
-{
+.search-empty-state {
   width: auto;
   padding-left: 15px;
   padding-right: 15px;
   line-height: normal;
 }
 
-
-
-
-
-
 /* font for everything outside of editor/preview panes */
-.app-container
-{
+.app-container {
   font-family: var(--font-family-preview);
 }
 
-.status-bar-item
-{
+.status-bar-item {
   font-family: var(--font-family-preview);
   font-size: 12px;
 }
 
-
-
-
-
-
-
-
-
-
 /******************/
 /* editor section */
 /******************/
-
-
-
-
-
-
-
-
 /* EDITOR Text (outside of headings and code) */
-
-.cm-s-obsidian
-{
+.cm-s-obsidian {
   font-family: var(--font-family-editor);
   font-size: 15px;
   color: var(--text-normal);
@@ -706,8 +455,7 @@ side-dock-ribbon-tab-inner is-after-active {
   padding-right: 0% !important;
 }
 
-.mod-single-child .cm-s-obsidian
-{
+.mod-single-child .cm-s-obsidian {
   font-family: var(--font-family-editor);
   font-size: 15px;
   color: var(--text-normal);
@@ -715,13 +463,8 @@ side-dock-ribbon-tab-inner is-after-active {
   padding-right: 4% !important;
 }
 
-
-
 /* EDITOR headings */
-
-
-.cm-header-1
-{
+.cm-header-1 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 28px;
@@ -729,8 +472,7 @@ side-dock-ribbon-tab-inner is-after-active {
   color: var(--text-title-h1);
 }
 
-.cm-header-2
-{
+.cm-header-2 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 26px;
@@ -738,8 +480,7 @@ side-dock-ribbon-tab-inner is-after-active {
   color: var(--text-title-h2);
 }
 
-.cm-header-3
-{
+.cm-header-3 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 23px;
@@ -747,8 +488,7 @@ side-dock-ribbon-tab-inner is-after-active {
   color: var(--text-title-h3);
 }
 
-.cm-header-4
-{
+.cm-header-4 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 19px;
@@ -757,8 +497,7 @@ side-dock-ribbon-tab-inner is-after-active {
   color: var(--text-title-h4);
 }
 
-.cm-header-5
-{
+.cm-header-5 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 18px;
@@ -767,8 +506,7 @@ side-dock-ribbon-tab-inner is-after-active {
   color: var(--text-title-h5);
 }
 
-.cm-header-6
-{
+.cm-header-6 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 16px;
@@ -787,500 +525,227 @@ side-dock-ribbon-tab-inner is-after-active {
 }
 
 .cm-s-obsidian span.cm-hashtag {
-    color: #d669bc;
-    text-decoration: underline;
+  color: #d669bc;
+  text-decoration: underline;
 }
-
-
 
 /* This is the dashes in bullets. Color does not work, 
 but font weight does. */
 .cm-formatting-list {
   color: #fcf601;
   font-weight: 700;
-} 
+}
 
 .cm-formatting  /* This is the color of header hashtags. Don't change. */
 .cm-formatting-list-ul
 .cm-list-1 /* This is the color of text in lists. Don't change. */
 
-/* This does not work */
-.cm-hashtag {
-  color: #fcf601;
-}
-.cm-meta cm-hashtag-end {
-  color: #fcf601;
-}
-
-.cm-meta cm-hashtag-end {
-  color: #fcf601;
-}
-
-
-.cm-s-obsidian span.cm-formatting-list {
-  color: #b9adff !important;
-}
-
-
-
-
-/******************/
-/* PREVIEW section */
-/******************/
-
-
-
-
-
-
-
-/* PREVIEW - normal text (outside of headings and code) */
-
-p {
-  margin-block-start: 0px;
-}
-
-
-.markdown-preview-view
-{
-  font-family: var(--font-family-preview);
-  font-size: 15px;
-  color: var(--text-normal);
-  padding-left: 10% !important;
-  padding-right: 10% !important;
-    line-height: 22px;
-
-}
-
-.mod-single-child .markdown-preview-view
-{
-  font-family: var(--font-family-preview);
-  font-size: 15px;
-  color: var(--text-normal);
-  padding-left: 10% !important;
-  padding-right: 10% !important;
-}
-
-
-/* PREVIEW headings */
-
-
-.markdown-preview-view h1
-{
-  font-family: var(--font-family-preview);
-  font-weight: 500;
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 36px;
-  margin-bottom: 15px;
-  color: var(--text-title-h1);
-}
-
-.markdown-preview-view h2
-{
-  font-family: var(--font-family-preview);
-  font-weight: 500;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  color: var(--text-title-h2);
-}
-
-.markdown-preview-view h3
-{
-  font-family: var(--font-family-preview);
-  font-weight: 500;
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 32px;
-  color: var(--text-title-h3);
-}
-
-.markdown-preview-view h4
-{
-  font-family: var(--font-family-preview);
-  font-weight: 500;
-  font-size: 19px;
-  font-weight: bold;
-  line-height: 28px;
-  color: var(--text-title-h4);
-}
-
-.markdown-preview-view h5
-{
-  font-family: var(--font-family-preview);
-  font-weight: 500;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 27px;
-  color: var(--text-title-h5);
-}
-
-.markdown-preview-view h6
-{
-  font-family: var(--font-family-preview);
-  font-weight: 500;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 24px;
-  margin-bottom: 3px;
-  color: var(--text-title-h6);
-  
-}
-
-
-
-
-
-
-/* this code stuff isn't working for me */
-
-code
-{
-  font-family: var(--font-family-preview);
-  font-weight: 500;
-  font-size: 16px;
-  font-weight: none;
-  color: var(--text-title-h3);
-}
-
-.code {
-    background-color: var(--grey) !important;
-    border: 1px solid var(--background-modifier-border) !important;
-    border-color: #ba6ea0!important;
-}
-
-
-
-
-
-
-
-
-/* internal embedded link rendering in preview */
-.markdown-embed-title
-{
-  font-weight: 600;
-}
-
-
-/* normal text outside of headings and code */
-.markdown-preview-view
-{
-  font-family: var(--font-family-preview);
-  font-size: 15px;
-  color: var(--text-normal);
-  padding-left: 8% !important;
-  padding-right: 4% !important;
-}
-
-
-
-/* remove secondary scroll bar in editor that comes from adding variable padding */
-.CodeMirror-scroll::-webkit-scrollbar {
-    display: none;
-}
-
-/* to have sidebar hide and then reveal on hover
-.app-container.is-left-sidedock-collapsed .side-dock.mod-left:not(:hover), .app-container.is-right-sidedock-collapsed .side-dock.mod-right:not(:hover) {
-  width: 0px !important;
-}
-*/
-
-
-/* internal embedded link rendering in preview */
-.markdown-embed-title
-{
-  font-weight: 600;
-}
-
-
-/* clean up side bar empty state (e.g. unlinked mentions) */
-.search-empty-state
-{
-  width: auto;
-  padding-left: 10px;
-  padding-right: 5px;
-  line-height: normal;
-}
-
-/* remote secondary scroll bar in editor that comes from adding variable padding */
-.CodeMirror-scroll::-webkit-scrollbar {
-    display: none;
-}
-
-/* to have sidebar hide and then reveal on hover
-.app-container.is-left-sidedock-collapsed .side-dock.mod-left:not(:hover), .app-container.is-right-sidedock-collapsed .side-dock.mod-right:not(:hover) {
-  width: 0px !important;
-}
-*/
-
-
-
-
-
-
-
-
-
-
 /******************/
 /* Editor Code Appearance - */
 /******************/
-
-.CodeMirror-code span.cm-inline-code {     
-	color: #d4d4d4 !important;
+.CodeMirror-code span.cm-inline-code {
+  color: #d4d4d4 !important;
 }
-
-
 
 /* Editor CodeBlock TEXT Appearance - */
-.cm-s-obsidian pre.HyperMD-codeblock {     
-	color: #d4d4d4 !important;
+.cm-s-obsidian pre.HyperMD-codeblock {
+  color: #d4d4d4 !important;
 }
-
 
 .cm-s-obsidian pre.HyperMD-list-line {
-    padding-top: 0.0em;
-    min-height: 1.0em;
-}
-
-
-
-/******************/
-/* Preview Code Appearance */
-/******************/
-
-br + .internal-embed {
-    margin-top: -2rem;
-}
-
-.markdown-preview-view code {
-color: #d4d4d4 !important;
-background-color: var(--pre-code) !important;
-bottom: -0.1px !important;
-}
-
-
-.markdown-embed {
-    padding-left: 0px !important;
-    padding-right: 5px !important;
-    margin-left: 10px !important;
-    margin-right: 4px !important;
-}
-
-.markdown-preview-view .markdown-embed, .markdown-preview-view .file-embed {
-    border-top: .25px solid #b3a14b;
-    border-bottom: .25px solid #b3a14b;
-    padding: 0px 0;
-    margin: 10px 0;
+  padding-top: 0em;
+  min-height: 1em;
 }
 
 /******************/
 /* Naked Embeds - But I'm keeping Border and Scroll! */
 /******************/
-.markdown-embed-title { display:none; }
-.markdown-preview-view .markdown-embed-content>:first-child { margin-top: 0; }
-.markdown-preview-view .markdown-embed-content>:last-child { margin-bottom: 0; }
-
-
 .markdown-embed-link {
-color: #5bb983 !important;
-right: 2px !important;
+  color: #5bb983 !important;
+  right: 2px !important;
 }
 
 .markdown-embed-link:hover {
-color: #38dc7f !important;
+  color: #38dc7f !important;
 }
-
 
 /******************/
 /* Custom addition by randulfr */
 /******************/
-
 .theme-dark .notice {
-    background-color: #2f3136;
-    color: rgba(252, 246, 1);
+  background-color: #2f3136;
+  color: rgb(252, 246, 1);
 }
-
-
 
 /***************************************/
 /* Title Bar Button */
 /***************************************/
-
 .titlebar-button {
-    -webkit-app-region: no-drag;
-    padding: 0 10px;
-    cursor: pointer;
-    opacity: 0.9;
-    display: inline-block;
-    color: #52c1da;
+  -webkit-app-region: no-drag;
+  padding: 0 10px;
+  cursor: pointer;
+  opacity: 0.9;
+  display: inline-block;
+  color: #52c1da;
 }
-
 
 .titlebar-text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    flex-grow: 1;
-    font-size: 12px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    opacity: 0.9;
-    color: #52c1da;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  flex-grow: 1;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+  color: #52c1da;
 }
-
-
 
 /***************************************/
 /* Transcluded notes embeds - By Ryan JA Murphy */
 /***************************************/
-
 .markdown-preview-view .markdown-embed {
-  padding:0 calc(var(--nested-padding) / 2) 0 var(--nested-padding);
+  padding: 0 calc(var(--nested-padding) / 2) 0 var(--nested-padding);
 }
 .markdown-embed-title {
-  line-height:18px;
-  height:24px;
+  line-height: 18px;
+  height: 24px;
   display: none;
 }
 .markdown-embed .markdown-preview-sizer {
-    padding-left: 0em !important;
-    padding-top: .25em !important;
-    padding-bottom: 0em !important;
-    min-height: 0em !important;
+  padding-left: 0em !important;
+  padding-top: 0.25em !important;
+  padding-bottom: 0em !important;
+  min-height: 0em !important;
 }
 .markdown-embed .markdown-preview-sizer:first-child ul {
-  margin-block-start:2px;
+  margin-block-start: 2px;
 }
 .markdown-embed .markdown-preview-section:last-child p,
 .markdown-embed .markdown-preview-section:last-child ul {
-  margin-block-end:15px;
+  margin-block-end: 15px;
 }
 .markdown-embed-link,
 .file-embed-link {
-  top:0px;
-  right:0;
-  text-align:right;
+  top: 0px;
+  right: 0;
+  text-align: right;
 }
 .file-embed-link svg,
 .markdown-embed-link svg {
-  width:16px;
-  opacity:0;
+  width: 16px;
+  opacity: 0;
 }
 .markdown-embed:hover .file-embed-link svg,
 .markdown-embed:hover .markdown-embed-link svg {
-  opacity:1;
+  opacity: 1;
 }
 .markdown-preview-view .markdown-embed-content > .markdown-preview-view {
-  max-height: none !important;}
+  max-height: none !important;
+}
 .markdown-embed .markdown-preview-view {
-  padding:0;}
+  padding: 0;
+}
 .internal-embed .markdown-embed {
-  border:0;
-  border:.5px solid var(--background-tertiary);
-  border-left:2px solid #37aec8;
-  border-radius:0;
+  border: 0;
+  border: 0.5px solid var(--background-tertiary);
+  border-left: 2px solid #37aec8;
+  border-radius: 0;
   padding-left: 0;
   background-color: var(--background-primary-alt);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .internal-embed .markdown-embed:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transform: translate3d(0px, -3px, 0px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: translate3d(0px, -3px, 0px);
 }
 br + .internal-embed {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 .markdown-embed-title ~ .markdown-embed-link,
 .internal-embed[src*="#"] .markdown-embed-link {
-  right:0 !important;
-  width:3%;
+  right: 0 !important;
+  width: 3%;
 }
 
 .internal-embed:not([src*="#^"]) .markdown-embed-link {
-    left: auto;
+  left: auto;
 }
 .internal-embed[src*="^"] .markdown-preview-sizer {
-    padding-left: .25em !important;
-    padding-top: 0 !important;
+  padding-left: 0.25em !important;
+  padding-top: 0 !important;
 }
 li > div.internal-embed {
-    display: inline-flex;
-    width: 99%
+  display: inline-flex;
+  width: 99%;
 }
 
 li .internal-embed .markdown-embed {
-    width: 99%;
+  width: 99%;
 }
 
 .markdown-embed-title {
-  line-height:18px;
-  height:24px;
+  line-height: 18px;
+  height: 24px;
   display: none;
 }
 .markdown-embed .markdown-preview-sizer {
-    padding-left: 1em;
-    padding-top: .5em;
+  padding-left: 1em;
+  padding-top: 0.5em;
 }
 
 .popover {
-  box-shadow:0 20px 40px var(--background-modifier-box-shadow);
-  pointer-events:auto !important;
-  border:1px solid var(--background-modifier-border);
+  box-shadow: 0 20px 40px var(--background-modifier-box-shadow);
+  pointer-events: auto !important;
+  border: 1px solid var(--background-modifier-border);
 }
 .popover .markdown-embed-link {
-  display:none;
+  display: none;
 }
 .popover .markdown-embed .markdown-preview-view {
-  padding-bottom:1em;
+  padding-bottom: 1em;
 }
 .popover.hover-popover .markdown-embed .markdown-embed-content {
   max-height: none !important;
 }
 
 .popover.hover-popover .internal-embed[src*="^"] .markdown-embed {
-    height: 100%;
-    max-height: none;
+  height: 100%;
+  max-height: none;
 }
 
 .popover.hover-popover .internal-embed[src*="^"] {
-    height: 3.25em;
+  height: 3.25em;
 }
 
 .popover.hover-popover {
-  max-height:40vh;
+  max-height: 40vh;
 }
-
-
-
-
-
-
-
-
-
-
 
 /***************************************/
 /*    at a rule line before ul list    */
 /***************************************/
-
-ul ul { position: relative; }
+ul ul {
+  position: relative;
+}
 ul ul::before {
-  content:'';
+  content: "";
   border-left: 0px solid #2c8ba0;
   position: absolute;
 }
-ul ul::before { left: -1em; top: 0; bottom: 0; }
+ul ul::before {
+  left: -1em;
+  top: 0;
+  bottom: 0;
+}
 
 /* rule line when there are checkboxes*/
-ul .task-list-item ul::before {left: -1.03em !important}
-
+ul .task-list-item ul::before {
+  left: -1.03em !important;
+}
 
 li::marker {
   color: var(--text-title-h2);
@@ -1293,32 +758,32 @@ li::marker {
 
 .markdown-preview-view .collapse-indicator {
   display: flex;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 /***************************************/
 /*    Tiny Tweaks now that Nick knows a smidgen more */
 /***************************************/
-
 /* To make all my hovering actions the same */
-.side-dock-ribbon-tab:hover, 
-.side-dock-ribbon-tab-inner:hover, 
-.side-dock-ribbon-action:hover, 
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-tab-inner:hover,
+.side-dock-ribbon-action:hover,
 .side-dock-ribbon-action.is-active:hover,
-.nav-action-button:hover, 
-.side-dock-collapse-btn:hover
-.workspace-tab-header-inner:hover,
+.nav-action-button:hover,
+.side-dock-collapse-btn:hover .workspace-tab-header-inner:hover,
 .workspace-tab-header-inner-icon:hover {
-color: var(--text-normal);
+  color: var(--text-normal);
 }
 
 /* The "other" Vertical Lines */
-.workspace-ribbon.mod-left, .workspace-ribbon.mod-left.is-collapsed {
-  border-right-color: rgb(158, 138, 255, .66);
+.workspace-ribbon.mod-left,
+.workspace-ribbon.mod-left.is-collapsed {
+  border-right-color: rgba(158, 138, 255, 0.66);
 }
 
-.workspace-ribbon.mod-right, .workspace-ribbon.mod-right.is-collapsed {
-  border-left-color: rgb(61, 216, 127, .66);
+.workspace-ribbon.mod-right,
+.workspace-ribbon.mod-right.is-collapsed {
+  border-left-color: rgba(61, 216, 127, 0.66);
 }
 
 /* The "other" Vertical Lines - The "Resizers" */
@@ -1333,15 +798,14 @@ color: var(--text-normal);
   width: 2px;
   height: 100%;
   color: #d669bc;
-  background-color:rgb(20, 20, 20,0.0);
-  z-index: rgb(20, 20, 20,0.0);
+  background-color: rgba(20, 20, 20, 0);
+  z-index: rgba(20, 20, 20, 0);
   cursor: col-resize;
 }
 
-
 /* Bottom Status Bar */
 .sync-status-icon.mod-success {
-  color: rgb(61, 216, 127, .44);
+  color: rgba(61, 216, 127, 0.44);
 }
 
 /* ScrollBar */
@@ -1357,7 +821,8 @@ color: var(--text-normal);
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
-::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:active {
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:active {
   border-radius: 2px;
 }
 
@@ -1366,11 +831,13 @@ color: var(--text-normal);
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background-color: rgb(93, 188, 210, .9);
+  background-color: rgba(93, 188, 210, 0.9);
 }
 
 /* Nick's Tiny Sliding Panes Tweaks */
-.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+.workspace-split.mod-root
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content {
   border-top-right-radius: 0px; /*instead of 6px*/
 }
 
@@ -1380,7 +847,8 @@ color: var(--text-normal);
   color: #5dd263;
 }
 
-.file-tree-item.mod-deleted .flair, .file-tree-item.mod-to-delete .flair {
+.file-tree-item.mod-deleted .flair,
+.file-tree-item.mod-to-delete .flair {
   background-color: var(--background-modifier-error);
 }
 
@@ -1392,17 +860,10 @@ color: var(--text-normal);
 
 .file-tree-item.mod-changed .flair {
   background-color: var(--background-modifier-error);
-  color: rgb(252, 246, 1, 0.75);
+  color: rgba(252, 246, 1, 0.75);
 }
 
-
-
-
 /* CALIFORNIA COAST MODIFIED MODALS */
-
-
-
-
 .progress-bar-message {
   color: var(--text-faint);
 }
@@ -1451,16 +912,8 @@ color: var(--text-normal);
   color: var(--text-title-h6);
 }
 
-
-
-
-
-
-
- /* CALIFORNIA COAST MODIFIED SETTINGS  */
-
-
- .modal-close-button:before {
+/* CALIFORNIA COAST MODIFIED SETTINGS  */
+.modal-close-button:before {
   font-weight: 200;
 }
 
@@ -1484,7 +937,6 @@ color: var(--text-normal);
   background: var(--background-secondary-alt);
 }
 
-
 .vertical-tab-nav-item {
   font-size: 15px;
   padding: 7px 6px;
@@ -1494,7 +946,6 @@ color: var(--text-normal);
   border-radius: var(--radius-s);
   background: var(--background-secondary-alt);
 }
-
 
 .vertical-tab-nav-item:hover {
   background: var(--background-secondary);
@@ -1515,7 +966,8 @@ color: var(--text-normal);
   line-height: 8px;
   min-height: 0;
 }
-.setting-add-hotkey-button, .setting-restore-hotkey-button {
+.setting-add-hotkey-button,
+.setting-restore-hotkey-button {
   color: var(--text-muted);
 }
 .setting-hotkey.mod-empty {
@@ -1524,8 +976,6 @@ color: var(--text-normal);
 
 /*    Settings Popup   */
 /*                    */
-
-
 button.mod-cta {
   background-color: var(--background-primary);
   color: var(--text-on-accent);
@@ -1540,7 +990,7 @@ button.mod-cta:hover {
 
 .tree-item-self:hover .tree-item-flair {
   background-color: var(--interactive-accent);
-  color: var(--background-secondary-alt)
+  color: var(--background-secondary-alt);
 }
 
 .flair.mod-pop {
@@ -1561,7 +1011,7 @@ button.mod-cta:hover {
 }
 
 /* Making sure "Conflict" text looks good*/
-.theme-dark .setting-hotkey.has-conflict  {
+.theme-dark .setting-hotkey.has-conflict {
   background-color: var(--background-modifier-error);
   color: #ff7575;
 }
@@ -1578,32 +1028,15 @@ button.mod-warning:hover {
   color: #ff7575;
 }
 
-
-
-
-
 /* This is to hide queries in Preview Mode. Thanks Kassapa!*/
-.markdown-preview-view .internal-query.is-embed .internal-query-header{ display:none; }
-
+.markdown-preview-view .internal-query.is-embed .internal-query-header {
+  display: none;
+}
 
 /*TAG PANE selected button thing
-
-.nav-action-button.is-active {
-  background-color: var(--background-primary);
-  color: var(--text-normal);
-  padding-left: 1px;
-  padding-right: 1px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.nav-action-button.is-active:hover {
-  background-color: var(--background-primary);
-  color: var(--text-normal);
-}
-
 /*fixing YAML tag color*/
-.frontmatter-container .tag, .frontmatter-container .frontmatter-alias {
+.frontmatter-container .tag,
+.frontmatter-container .frontmatter-alias {
   text-decoration: none;
   background-color: var(--background-secondary-alt);
   border-radius: 30px;
@@ -1617,7 +1050,8 @@ button.mod-warning:hover {
 }
 
 /*less rounded tag pills*/
-.frontmatter-container .tag, .frontmatter-container .frontmatter-alias {
+.frontmatter-container .tag,
+.frontmatter-container .frontmatter-alias {
   text-decoration: none;
   background-color: var(--background-secondary-alt);
   border-radius: 8px;
@@ -1635,27 +1069,11 @@ img.emoji {
   display: inline-block;
 }
 
-
 /* Active buttons */
-/*
-.workspace-leaf-content[data-type='search'] 
-.nav-action-button.is-active {
-  background-color: var(--background-primary);
-  color: var(--text-normal);
-}
-
-.workspace-leaf-content[data-type='backlink'] 
-.nav-action-button.is-active {
-    background-color: var(--background-primary);
-    color: var(--text-normal);
-}
-*/
-
 .nav-action-button.is-active {
   background-color: transparent;
   color: var(--text-on-accent);
 }
-
 
 /* Making the search dropdown box have smaller fonts */
 .suggestion-container.mod-search-suggestion {
@@ -1663,61 +1081,3 @@ img.emoji {
   font-size: 16px; /* doesn't work */
   line-height: 18px; /* this works, which is good enough */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**********************/
-/* HIGHLIGHTER UPDATES */
-/**********************/
-
-mark
-{
-  background-color: var(--text-mark) !important;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-
-.markdown-preview-view mark {
-    color: #6CE4FF;
-    font-weight: 500;
-    text-shadow: 0 0 0.6em #FCF60159;
-    }
-
-
-.cm-s-obsidian span.cm-highlight {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 0 0.1rem;
-  background-image: linear-gradient(60deg, #86c3ff 0%, #ddb9ff 100%) !important;
-  text-shadow: 0 0 0.6em #fcf80118;
-}
-
-.markdown-preview-view mark {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 0 0.1rem;
-  background-image: linear-gradient(60deg, #86c3ff 0%, #ddb9ff 100%) !important;
-  text-shadow: 0 0 0.6em #fcf80118;
-  }
