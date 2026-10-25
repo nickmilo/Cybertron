@@ -95,11 +95,13 @@
 /* HIGHLIGHTER */
 /**********************/
 mark {
-  background-color: var(--text-mark) !important;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
+}
+:root:root:root mark {
+  background-color: var(--text-mark);
 }
 
 .cm-s-obsidian span.cm-highlight {
@@ -110,7 +112,9 @@ mark {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0 0.1rem;
-  background-image: linear-gradient(60deg, #86c3ff 0%, #ddb9ff 100%) !important;
+}
+:root:root:root .cm-s-obsidian span.cm-highlight {
+  background-image: linear-gradient(60deg, #86c3ff 0%, #ddb9ff 100%);
 }
 
 .markdown-preview-view mark {
@@ -120,7 +124,9 @@ mark {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0 0.1rem;
-  background-image: linear-gradient(60deg, #86c3ff 0%, #ddb9ff 100%) !important;
+}
+:root:root:root .markdown-preview-view mark {
+  background-image: linear-gradient(60deg, #86c3ff 0%, #ddb9ff 100%);
 }
 
 /*settings pop-up*/
@@ -161,12 +167,12 @@ mark {
 }
 
 /* icons at top of panes*/
-.file-view-actions a {
-  color: var(--text-muted) !important;
+:root:root:root .file-view-actions a {
+  color: var(--text-muted);
 }
 
-.file-view-actions a:hover {
-  color: var(--link-color) !important;
+:root:root:root .file-view-actions a:hover {
+  color: var(--link-color);
 }
 
 .clickable-icon.view-action {
@@ -174,11 +180,11 @@ mark {
 }
 
 /* in-line code for editor and preview and code block for editor*/
-code,
-.cm-inline-code {
-  background-color: var(--pre-code) !important;
-  color: var(--text-muted) !important;
-  bottom: 0px !important;
+:root:root:root code,
+:root:root:root .cm-inline-code {
+  background-color: var(--pre-code);
+  color: var(--text-muted);
+  bottom: 0px;
 }
 
 /* Code block error coloring */
@@ -244,7 +250,6 @@ img {
 /* 3.9.3. Task lists! (I'm proud of this, but could use improvement) */
 .markdown-preview-view .task-list-item-checkbox {
   -webkit-appearance: none;
-  top: 1.8px !important;
   box-sizing: border-box;
   border: 1px solid #888888;
   position: relative;
@@ -252,6 +257,9 @@ img {
   height: 1em;
   margin: 0;
   margin-right: 0.7em;
+}
+:root:root:root .markdown-preview-view .task-list-item-checkbox {
+  top: 1.8px;
 }
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
@@ -375,13 +383,17 @@ button.mod-cta {
 /* RIGHT side dock ******* RIBBON*/
 /*************/
 .side-dock-ribbon-tab.is-active .side-dock-ribbon-tab-inner:hover {
-  color: var(--text-normal) !important;
   background-color: #1a1a1a;
+}
+:root:root:root .side-dock-ribbon-tab.is-active .side-dock-ribbon-tab-inner:hover {
+  color: var(--text-normal);
 }
 
 .side-dock-ribbon-tab.is-active .side-dock-ribbon-tab-inner:hover {
-  color: #d669bc !important;
   background-color: #1a1a1a;
+}
+:root:root:root .side-dock-ribbon-tab.is-active .side-dock-ribbon-tab-inner:hover {
+  color: #d669bc;
 }
 
 .nav-file-tag {
@@ -392,8 +404,8 @@ button.mod-cta {
 }
 
 /* side dock text, like file names and backlink context */
-.side-dock-panels-container * {
-  font-size: 13px !important;
+:root:root:root .side-dock-panels-container * {
+  font-size: 13px;
 }
 
 .side-dock-plugin-panel-inner {
@@ -401,9 +413,9 @@ button.mod-cta {
 }
 
 /* side dock titles at top */
-.side-dock-title {
-  font-size: 20px !important;
-  font-weight: 800 !important;
+:root:root:root .side-dock-title {
+  font-size: 20px;
+  font-weight: 800;
 }
 
 /* hover actions on side dock navigation */
@@ -420,11 +432,15 @@ button.mod-cta {
 .nav-file-title-content,
 .search-result-file-title,
 .search-result-file-match {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  line-height: normal !important;
   word-break: keep-all;
   font-size: 14px;
+}
+:root:root:root .nav-file-title-content,
+:root:root:root .search-result-file-title,
+:root:root:root .search-result-file-match {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: normal;
 }
 
 /* clean up side bar empty state (e.g. unlinked mentions) */
@@ -453,16 +469,20 @@ button.mod-cta {
   font-family: var(--font-family-editor);
   font-size: 15px;
   color: var(--text-normal);
-  padding-left: 3% !important;
-  padding-right: 0% !important;
+}
+:root:root:root .cm-s-obsidian {
+  padding-left: 3%;
+  padding-right: 0%;
 }
 
 .mod-single-child .cm-s-obsidian {
   font-family: var(--font-family-editor);
   font-size: 15px;
   color: var(--text-normal);
-  padding-left: 8% !important;
-  padding-right: 4% !important;
+}
+:root:root:root .mod-single-child .cm-s-obsidian {
+  padding-left: 8%;
+  padding-right: 4%;
 }
 
 /* EDITOR headings */
@@ -538,20 +558,20 @@ but font weight does. */
   font-weight: 700;
 }
 
-.cm-formatting  /* This is the color of header hashtags. Don't change. */
+:root:root:root .cm-formatting  
 .cm-formatting-list-ul
-.cm-list-1 /* This is the color of text in lists. Don't change. */
+.cm-list-1 
 
-/******************/
-/* Editor Code Appearance - */
-/******************/
+
+
+
 .CodeMirror-code span.cm-inline-code {
-  color: #d4d4d4 !important;
+  color: #d4d4d4;
 }
 
 /* Editor CodeBlock TEXT Appearance - */
-.cm-s-obsidian pre.HyperMD-codeblock {
-  color: #d4d4d4 !important;
+:root:root:root .cm-s-obsidian pre.HyperMD-codeblock {
+  color: #d4d4d4;
 }
 
 .cm-s-obsidian pre.HyperMD-list-line {
@@ -562,13 +582,13 @@ but font weight does. */
 /******************/
 /* Naked Embeds - But I'm keeping Border and Scroll! */
 /******************/
-.markdown-embed-link {
-  color: #5bb983 !important;
-  right: 2px !important;
+:root:root:root .markdown-embed-link {
+  color: #5bb983;
+  right: 2px;
 }
 
-.markdown-embed-link:hover {
-  color: #38dc7f !important;
+:root:root:root .markdown-embed-link:hover {
+  color: #38dc7f;
 }
 
 /******************/
@@ -616,11 +636,11 @@ but font weight does. */
   height: 24px;
   display: none;
 }
-.markdown-embed .markdown-preview-sizer {
-  padding-left: 0em !important;
-  padding-top: 0.25em !important;
-  padding-bottom: 0em !important;
-  min-height: 0em !important;
+:root:root:root .markdown-embed .markdown-preview-sizer {
+  padding-left: 0em;
+  padding-top: 0.25em;
+  padding-bottom: 0em;
+  min-height: 0em;
 }
 .markdown-embed .markdown-preview-sizer:first-child ul {
   margin-block-start: 2px;
@@ -644,8 +664,8 @@ but font weight does. */
 .markdown-embed:hover .markdown-embed-link svg {
   opacity: 1;
 }
-.markdown-preview-view .markdown-embed-content > .markdown-preview-view {
-  max-height: none !important;
+:root:root:root .markdown-preview-view .markdown-embed-content > .markdown-preview-view {
+  max-height: none;
 }
 .markdown-embed .markdown-preview-view {
   padding: 0;
@@ -669,16 +689,19 @@ br + .internal-embed {
 }
 .markdown-embed-title ~ .markdown-embed-link,
 .internal-embed[src*="#"] .markdown-embed-link {
-  right: 0 !important;
   width: 3%;
+}
+:root:root:root .markdown-embed-title ~ .markdown-embed-link,
+:root:root:root .internal-embed[src*="#"] .markdown-embed-link {
+  right: 0;
 }
 
 .internal-embed:not([src*="#^"]) .markdown-embed-link {
   left: auto;
 }
-.internal-embed[src*="^"] .markdown-preview-sizer {
-  padding-left: 0.25em !important;
-  padding-top: 0 !important;
+:root:root:root .internal-embed[src*="^"] .markdown-preview-sizer {
+  padding-left: 0.25em;
+  padding-top: 0;
 }
 li > div.internal-embed {
   display: inline-flex;
@@ -701,8 +724,10 @@ li .internal-embed .markdown-embed {
 
 .popover {
   box-shadow: 0 20px 40px var(--background-modifier-box-shadow);
-  pointer-events: auto !important;
   border: 1px solid var(--background-modifier-border);
+}
+:root:root:root .popover {
+  pointer-events: auto;
 }
 .popover .markdown-embed-link {
   display: none;
@@ -710,8 +735,8 @@ li .internal-embed .markdown-embed {
 .popover .markdown-embed .markdown-preview-view {
   padding-bottom: 1em;
 }
-.popover.hover-popover .markdown-embed .markdown-embed-content {
-  max-height: none !important;
+:root:root:root .popover.hover-popover .markdown-embed .markdown-embed-content {
+  max-height: none;
 }
 
 .popover.hover-popover .internal-embed[src*="^"] .markdown-embed {
@@ -745,8 +770,8 @@ ul ul::before {
 }
 
 /* rule line when there are checkboxes*/
-ul .task-list-item ul::before {
-  left: -1.03em !important;
+:root:root:root ul .task-list-item ul::before {
+  left: -1.03em;
 }
 
 li::marker {
